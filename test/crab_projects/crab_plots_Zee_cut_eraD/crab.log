@@ -1,0 +1,638 @@
+DEBUG 2017-12-02 20:05:01,852: 	 Executing command: 'submit'
+DEBUG 2017-12-02 20:05:01,852: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2017-12-02 20:05:01,858: 	 Checking credentials
+DEBUG 2017-12-02 20:05:01,859: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-12-02 20:05:01,859: 	 Getting proxy life time left
+DEBUG 2017-12-02 20:05:02,474: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 58523
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:05:03,083: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 58523
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:05:03,084: 	 Proxy valid for 16:15:23 hours
+INFO 2017-12-02 20:05:03,084: 	 Will use CRAB configuration file crab_ElectronPlots_eraD.py
+DEBUG 2017-12-02 20:05:03,084: 	 Loading CRAB configuration file.
+DEBUG 2017-12-02 20:05:06,392: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-12-02 20:05:06,536: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:05:06,536: 	 Checking credentials
+DEBUG 2017-12-02 20:05:06,536: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-12-02 20:05:06,536: 	 Getting proxy life time left
+DEBUG 2017-12-02 20:05:07,145: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 58518
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:05:07,855: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 58518
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:05:07,855: 	 Proxy valid for 16:15:18 hours
+DEBUG 2017-12-02 20:05:08,361: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u93494 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:05:09,331: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-12-02 20:05:09,441: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:05:09,441: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-12-02 20:05:09,441: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2017-12-02 20:05:09,746: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 646:27:43  (26.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:05:09,747: 	 Myproxy is valid: 2327263
+DEBUG 2017-12-02 20:05:09,747: 	 Command use: submit
+DEBUG 2017-12-02 20:05:09,747: 	 Options use: ['-c', 'crab_ElectronPlots_eraD.py']
+DEBUG 2017-12-02 20:05:10,670: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-12-02 20:05:10,670: 	 Instance is prod
+DEBUG 2017-12-02 20:05:10,670: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-12-02 20:05:10,670: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-12-02 20:05:10,670: 	 Started submission
+DEBUG 2017-12-02 20:05:10,670: 	 Working on /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD
+DEBUG 2017-12-02 20:05:11,643: 	 Loading required information from the environment
+DEBUG 2017-12-02 20:05:11,643: 	 Found CMSSW_9_3_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0
+DEBUG 2017-12-02 20:05:11,645: 	 Loading required information from the environment
+DEBUG 2017-12-02 20:05:11,645: 	 Found CMSSW_9_3_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0
+DEBUG 2017-12-02 20:05:11,660: 	 UNIQUE NAME: tarUUID d2d6f7b5-dfc1-474c-a618-ba09ccbf9bc0 
+DEBUG 2017-12-02 20:05:11,661: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = True
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'plots_Zee_cut_eraD'
+config.section_('JobType')
+config.JobType.psetName = 'runElectronPlots_Skim_eraD.py'
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDataset = '/DoubleEG/Run2017D-PromptReco-v1/MINIAOD'
+config.Data.outputDatasetTag = 'Zee_ElectronPlots_cut_eraD'
+config.Data.publication = True
+config.Data.unitsPerJob = 1000
+config.Data.splitting = 'LumiBased'
+config.Data.inputDBS = 'global'
+config.Data.lumiMask = 'eraD.txt'
+config.Data.outLFNDirBase = '/store/user/psiddire/'
+config.Data.runRange = '302031-302663'
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2017-12-02 20:05:11,661: 	 self.config.JobType.psetName: runElectronPlots_Skim_eraD.py
+INFO 2017-12-02 20:05:11,662: 	 Importing CMSSW configuration runElectronPlots_Skim_eraD.py
+INFO 2017-12-02 20:05:12,254: 	 Finished importing CMSSW configuration runElectronPlots_Skim_eraD.py
+DEBUG 2017-12-02 20:05:12,254: 	 Writing CMSSW configuration to /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/inputs/PSet.py
+DEBUG 2017-12-02 20:05:12,311: 	 The following EDM output files will be collected: []
+DEBUG 2017-12-02 20:05:12,311: 	 The following TFile output files will be collected: ['ntuple_skim_eraD.root']
+DEBUG 2017-12-02 20:05:12,311: 	 The following user output files will be collected: []
+DEBUG 2017-12-02 20:05:12,311: 	 Loading required information from the environment
+DEBUG 2017-12-02 20:05:12,311: 	 Found CMSSW_9_3_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0
+DEBUG 2017-12-02 20:05:12,311: 	 Making tarball in /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/inputs/d2d6f7b5-dfc1-474c-a618-ba09ccbf9bc0default.tgz
+DEBUG 2017-12-02 20:05:12,351: 	 Checking directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/lib
+DEBUG 2017-12-02 20:05:12,351: 	 Adding directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/lib to tarball
+DEBUG 2017-12-02 20:05:12,907: 	 Checking directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/biglib
+DEBUG 2017-12-02 20:05:12,907: 	 Adding directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/biglib to tarball
+DEBUG 2017-12-02 20:05:12,907: 	 Checking directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/module
+DEBUG 2017-12-02 20:05:14,051: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/CalibCode/CalibTools/interface to tarball
+DEBUG 2017-12-02 20:05:14,159: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/CalibCode/EgammaObjects/interface to tarball
+DEBUG 2017-12-02 20:05:14,276: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/CalibCode/FillEpsilonPlot/data to tarball
+DEBUG 2017-12-02 20:05:15,710: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/CalibCode/FillEpsilonPlot/interface to tarball
+DEBUG 2017-12-02 20:05:15,799: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/CalibCode/FitEpsilonPlot/interface to tarball
+DEBUG 2017-12-02 20:05:15,821: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/CalibCode/GBRTrain/interface to tarball
+DEBUG 2017-12-02 20:05:19,511: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/ggAnalysis/ggNtuplizer/interface to tarball
+DEBUG 2017-12-02 20:05:19,746: 	 Uploading archive /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/inputs/d2d6f7b5-dfc1-474c-a618-ba09ccbf9bc0default.tgz (8.192383.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-12-02 20:05:22,026: 	 Loading required information from the environment
+DEBUG 2017-12-02 20:05:22,027: 	 Found CMSSW_9_3_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0
+DEBUG 2017-12-02 20:05:22,027: 	 Making tarball in /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/inputs/debugFiles.tgz
+DEBUG 2017-12-02 20:05:22,044: 	 Uploading archive /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-12-02 20:05:22,934: 	 Result uploading input files: b39135b29be84130ddacb34a6c3617a14dc462e1f26b1310ebb742b6fd1d5b64.tar.gz 
+DEBUG 2017-12-02 20:05:22,935: 	 Attaching lumi mask eraD.txt to the request
+DEBUG 2017-12-02 20:05:22,935: 	 Reading lumi-mask from eraD.txt
+WARNING 2017-12-02 20:05:22,958: 	 Warning: The following output files will not be published, as they are not EDM files: ['ntuple_skim_eraD.root']
+INFO 2017-12-02 20:05:22,958: 	 Sending the request to the server
+DEBUG 2017-12-02 20:05:22,958: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 1, 'useparent': 0, 'asyncdest': 'T2_CH_CERN', 'algoargs': 1000, 'cachefilename': 'b39135b29be84130ddacb34a6c3617a14dc462e1f26b1310ebb742b6fd1d5b64.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_9_3_0', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/DoubleEG/Run2017D-PromptReco-v1/MINIAOD', 'lfn': '/store/user/psiddire/', 'dryrun': 0, 'workflow': 'crab_plots_Zee_cut_eraD', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'runs': [u'302031', u'302033', u'302034', u'302037', u'302038', u'302040', u'302041', u'302042', u'302043', u'302131', u'302159', u'302163', u'302165', u'302166', u'302225', u'302228', u'302229', u'302240', u'302262', u'302263', u'302277', u'302279', u'302280', u'302322', u'302328', u'302337', u'302342', u'302343', u'302344', u'302350', u'302388', u'302392', u'302393', u'302448', u'302472', u'302473', u'302474', u'302475', u'302476', u'302479', u'302484', u'302485', u'302492', u'302493', u'302494', u'302509', u'302513', u'302522', u'302523', u'302525', u'302526', u'302548', u'302551', u'302553', u'302554', u'302555', u'302563', u'302565', u'302572', u'302573', u'302596', u'302597', u'302634', u'302635', u'302651', u'302654', u'302661', u'302663'], 'lumis': ['1,96,102,401,403,446,448,675,678,818', '1,40,44,46', '1,20', '1,2,18,20', '10,10', '1,174', '1,72', '1,523', '1,228', '71,811,818,943', '33,140', '32,671,674,1230', '1,85', '1,16', '48,133,136,923', '53,78,81,293', '1,457', '1,960', '37,471', '1,1250', '15,17,22,192,194,391', '1,71', '1,152', '33,870', '42,722', '27,162', '1,72', '1,98', '1,482', '1,136', '27,157,164,717', '45,407', '1,887', '21,312,317,442,445,483,486,1926', '28,808', '1,368,398,406', '1,305', '1,7', '1,259', '30,222,225,340', '8,176', '1,922', '1,21,23,59', '1,7', '1,618', '73,92', '37,89', '29,46', '1,59', '1,677,747,778', '1,534,545,582', '40,124', '1,7', '1,188', '1,7', '1,11', '40,46', '1,7', '1,291', '1,693,730,1285', '47,534,545,705,710,986', '1,1054', '37,73,75,123,125,129,133,165,168,175,177,216,218,358,361,375,378,404,407,423,425,503,505,578,581,594,596,638', '1,22,24,28,30,39,41,53,55,132,134,144,146,265,267,271,274,344,347,357,359,375,378,384,386,414,416,494,497,608,611,634,637,684,687,706,708,724,726,901,904,954,957,982,984,1072,1075,1124,1126,1129,1132,1206,1209,1234,1236,1291', '1,149', '1,317', '1,72', '1,706'], 'nonprodsw': 0, 'tfileoutfiles': ['ntuple_skim_eraD.root'], 'oneEventMode': 0, 'debugfilename': 'd29bd0032d17ca5cecb0b4ce829dc4a12d926fdcd775b56b99422cca2e36ab7f.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc630', 'totalunits': 0, 'splitalgo': 'LumiBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'Zee_ElectronPlots_cut_eraD'} 
+DEBUG 2017-12-02 20:05:22,959: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=1&useparent=0&asyncdest=T2_CH_CERN&algoargs=1000&cachefilename=b39135b29be84130ddacb34a6c3617a14dc462e1f26b1310ebb742b6fd1d5b64.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_9_3_0&primarydataset=&inputdata=%2FDoubleEG%2FRun2017D-PromptReco-v1%2FMINIAOD&lfn=%2Fstore%2Fuser%2Fpsiddire%2F&dryrun=0&workflow=crab_plots_Zee_cut_eraD&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=d29bd0032d17ca5cecb0b4ce829dc4a12d926fdcd775b56b99422cca2e36ab7f.tar.gz&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc630&totalunits=0&splitalgo=LumiBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=Zee_ElectronPlots_cut_eraD&tfileoutfiles=ntuple_skim_eraD.root&runs=302031&runs=302033&runs=302034&runs=302037&runs=302038&runs=302040&runs=302041&runs=302042&runs=302043&runs=302131&runs=302159&runs=302163&runs=302165&runs=302166&runs=302225&runs=302228&runs=302229&runs=302240&runs=302262&runs=302263&runs=302277&runs=302279&runs=302280&runs=302322&runs=302328&runs=302337&runs=302342&runs=302343&runs=302344&runs=302350&runs=302388&runs=302392&runs=302393&runs=302448&runs=302472&runs=302473&runs=302474&runs=302475&runs=302476&runs=302479&runs=302484&runs=302485&runs=302492&runs=302493&runs=302494&runs=302509&runs=302513&runs=302522&runs=302523&runs=302525&runs=302526&runs=302548&runs=302551&runs=302553&runs=302554&runs=302555&runs=302563&runs=302565&runs=302572&runs=302573&runs=302596&runs=302597&runs=302634&runs=302635&runs=302651&runs=302654&runs=302661&runs=302663&lumis=1%2C96%2C102%2C401%2C403%2C446%2C448%2C675%2C678%2C818&lumis=1%2C40%2C44%2C46&lumis=1%2C20&lumis=1%2C2%2C18%2C20&lumis=10%2C10&lumis=1%2C174&lumis=1%2C72&lumis=1%2C523&lumis=1%2C228&lumis=71%2C811%2C818%2C943&lumis=33%2C140&lumis=32%2C671%2C674%2C1230&lumis=1%2C85&lumis=1%2C16&lumis=48%2C133%2C136%2C923&lumis=53%2C78%2C81%2C293&lumis=1%2C457&lumis=1%2C960&lumis=37%2C471&lumis=1%2C1250&lumis=15%2C17%2C22%2C192%2C194%2C391&lumis=1%2C71&lumis=1%2C152&lumis=33%2C870&lumis=42%2C722&lumis=27%2C162&lumis=1%2C72&lumis=1%2C98&lumis=1%2C482&lumis=1%2C136&lumis=27%2C157%2C164%2C717&lumis=45%2C407&lumis=1%2C887&lumis=21%2C312%2C317%2C442%2C445%2C483%2C486%2C1926&lumis=28%2C808&lumis=1%2C368%2C398%2C406&lumis=1%2C305&lumis=1%2C7&lumis=1%2C259&lumis=30%2C222%2C225%2C340&lumis=8%2C176&lumis=1%2C922&lumis=1%2C21%2C23%2C59&lumis=1%2C7&lumis=1%2C618&lumis=73%2C92&lumis=37%2C89&lumis=29%2C46&lumis=1%2C59&lumis=1%2C677%2C747%2C778&lumis=1%2C534%2C545%2C582&lumis=40%2C124&lumis=1%2C7&lumis=1%2C188&lumis=1%2C7&lumis=1%2C11&lumis=40%2C46&lumis=1%2C7&lumis=1%2C291&lumis=1%2C693%2C730%2C1285&lumis=47%2C534%2C545%2C705%2C710%2C986&lumis=1%2C1054&lumis=37%2C73%2C75%2C123%2C125%2C129%2C133%2C165%2C168%2C175%2C177%2C216%2C218%2C358%2C361%2C375%2C378%2C404%2C407%2C423%2C425%2C503%2C505%2C578%2C581%2C594%2C596%2C638&lumis=1%2C22%2C24%2C28%2C30%2C39%2C41%2C53%2C55%2C132%2C134%2C144%2C146%2C265%2C267%2C271%2C274%2C344%2C347%2C357%2C359%2C375%2C378%2C384%2C386%2C414%2C416%2C494%2C497%2C608%2C611%2C634%2C637%2C684%2C687%2C706%2C708%2C724%2C726%2C901%2C904%2C954%2C957%2C982%2C984%2C1072%2C1075%2C1124%2C1126%2C1129%2C1132%2C1206%2C1209%2C1234%2C1236%2C1291&lumis=1%2C149&lumis=1%2C317&lumis=1%2C72&lumis=1%2C706
+DEBUG 2017-12-02 20:05:24,157: 	 Result: {u'result': [{u'RequestName': u'171202_190523:psiddire_crab_plots_Zee_cut_eraD'}]}
+INFO 2017-12-02 20:05:24,161: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2017-12-02 20:05:24,161: 	 Task name: 171202_190523:psiddire_crab_plots_Zee_cut_eraD
+INFO 2017-12-02 20:05:24,161: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2017-12-02 20:05:24,161: 	 About to return
+INFO 2017-12-02 20:05:24,165: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/crab.log
+DEBUG 2017-12-02 20:08:20,040: 	 Executing command: 'status'
+DEBUG 2017-12-02 20:08:20,040: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2017-12-02 20:08:20,049: 	 Checking credentials
+DEBUG 2017-12-02 20:08:20,049: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-12-02 20:08:20,049: 	 Getting proxy life time left
+DEBUG 2017-12-02 20:08:21,484: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 58324
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:08:22,511: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 58323
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:08:22,511: 	 Proxy valid for 16:12:04 hours
+DEBUG 2017-12-02 20:08:22,628: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:08:22,628: 	 Checking credentials
+DEBUG 2017-12-02 20:08:22,629: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-12-02 20:08:22,629: 	 Getting proxy life time left
+DEBUG 2017-12-02 20:08:23,441: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 58322
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:08:24,152: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 58321
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:08:24,152: 	 Proxy valid for 16:12:02 hours
+DEBUG 2017-12-02 20:08:25,075: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-12-02 20:08:25,184: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:08:25,184: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-12-02 20:08:25,184: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2017-12-02 20:08:25,388: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 646:24:27  (26.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-02 20:08:25,390: 	 Myproxy is valid: 2327067
+DEBUG 2017-12-02 20:08:25,390: 	 Command use: status
+DEBUG 2017-12-02 20:08:25,390: 	 Options use: ['-d', 'crab_projects/crab_plots_Zee_cut_eraD']
+DEBUG 2017-12-02 20:08:26,355: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-12-02 20:08:26,355: 	 Instance is prod
+DEBUG 2017-12-02 20:08:26,355: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-12-02 20:08:26,355: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-12-02 20:08:27,306: 	 Got information from server oracle database: {u'result': [u'171202_190523:psiddire_crab_plots_Zee_cut_eraD', u'None', u'SUBMITTED', u'2017-12-02 19:05:24.149514', u'None', u'2017-12-02 19:06:23.952324', u'None', u'CMSSW_9_3_0', u'slc6_amd64_gcc630', u'/DoubleEG/Run2017D-PromptReco-v1/MINIAOD', u'[]', u'[]', u'LumiBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['1,96,102,401,403,446,448,675,678,818', '1,40,44,46', '1,20', '1,2,18,20', '10,10', '1,174', '1,72', '1,523', '1,228', '71,811,818,943', '33,140', '32,671,674,1230', '1,85', '1,16', '48,133,136,923', '53,78,81,293', '1,457', '1,960', '37,471', '1,1250', '15,17,22,192,194,391', '1,71', '1,152', '33,870', '42,722', '27,162', '1,72', '1,98', '1,482', '1,136', '27,157,164,717', '45,407', '1,887', '21,312,317,442,445,483,486,1926', '28,808', '1,368,398,406', '1,305', '1,7', '1,259', '30,222,225,340', '8,176', '1,922', '1,21,23,59', '1,7', '1,618', '73,92', '37,89', '29,46', '1,59', '1,677,747,778', '1,534,545,582', '40,124', '1,7', '1,188', '1,7', '1,11', '40,46', '1,7', '1,291', '1,693,730,1285', '47,534,545,705,710,986', '1,1054', '37,73,75,123,125,129,133,165,168,175,177,216,218,358,361,375,378,404,407,423,425,503,505,578,581,594,596,638', '1,22,24,28,30,39,41,53,55,132,134,144,146,265,267,271,274,344,347,357,359,375,378,384,386,414,416,494,497,608,611,634,637,684,687,706,708,724,726,901,904,954,957,982,984,1072,1075,1124,1126,1129,1132,1206,1209,1234,1236,1291', '1,149', '1,317', '1,72', '1,706'], 'runs': ['302031', '302033', '302034', '302037', '302038', '302040', '302041', '302042', '302043', '302131', '302159', '302163', '302165', '302166', '302225', '302228', '302229', '302240', '302262', '302263', '302277', '302279', '302280', '302322', '302328', '302337', '302342', '302343', '302344', '302350', '302388', '302392', '302393', '302448', '302472', '302473', '302474', '302475', '302476', '302479', '302484', '302485', '302492', '302493', '302494', '302509', '302513', '302522', '302523', '302525', '302526', '302548', '302551', '302553', '302554', '302555', '302563', '302565', '302572', '302573', '302596', '302597', '302634', '302635', '302651', '302654', '302661', '302663'], 'lumis_per_job': 1000}", u'0', u'b39135b29be84130ddacb34a6c3617a14dc462e1f26b1310ebb742b6fd1d5b64.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'psiddire', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy', u'cms', u'None', u'None', u'Zee_ElectronPlots_cut_eraD-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0119.cern.ch/mon/cms1092/171202_190523:psiddire_crab_plots_Zee_cut_eraD', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['ntuple_skim_eraD.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0119.cern.ch', u'F', u'[]', u'T', u'/store/user/psiddire/', u'F', u'None', u'F', u'F', u'F', u'None', u'DoubleEG', u'filetransfers', u'SUBMIT', u'14592612', u'd29bd0032d17ca5cecb0b4ce829dc4a12d926fdcd775b56b99422cca2e36ab7f.tar.gz', u'188.184.89.161', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-12-02 20:08:27,307: 	 CRAB project directory:		/afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD
+INFO 2017-12-02 20:08:27,307: 	 Task name:			171202_190523:psiddire_crab_plots_Zee_cut_eraD
+INFO 2017-12-02 20:08:27,307: 	 Grid scheduler:			crab3@vocms0119.cern.ch
+INFO 2017-12-02 20:08:27,307: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-12-02 20:08:27,307: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171202_190523%3Apsiddire_crab_plots_Zee_cut_eraD
+INFO 2017-12-02 20:08:27,307: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=psiddire&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171202_190523%3Apsiddire_crab_plots_Zee_cut_eraD
+DEBUG 2017-12-02 20:08:27,307: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 14592612)
+DEBUG 2017-12-02 20:08:27,307: 	 Webdir is located at http://vocms0119.cern.ch/mon/cms1092/171202_190523:psiddire_crab_plots_Zee_cut_eraD
+DEBUG 2017-12-02 20:08:28,299: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0119/cms1092/171202_190523:psiddire_crab_plots_Zee_cut_eraD
+DEBUG 2017-12-02 20:08:28,299: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0119/cms1092/171202_190523:psiddire_crab_plots_Zee_cut_eraD/status_cache
+DEBUG 2017-12-02 20:08:29,430: 	 Got information from status cache file: {'24': {'Retries': 0, 'WallDurations': [], 'StartTimes': [], 'SubmitTimes': [], 'JobIds': [], 'EndTimes': [], 'Restarts': 0, 'State': 'unsubmitted', 'ResidentSetSize': [], 'TotalUserCpuTimeHistory': [], 'SiteHistory': [], 'TotalSysCpuTimeHistory': []}, '25': {'Retries': 0, 'WallDurations': [], 'StartTimes': [], 'SubmitTimes': [], 'JobIds': [], 'EndTimes': [], 'Restarts': 0, 'State': 'unsubmitted', 'ResidentSetSize': [], 'TotalUserCpuTimeHistory': [], 'SiteHistory': [], 'TotalSysCpuTimeHistory': []}, '26': {'Retries': 0, 'WallDurations': [], 'StartTimes': [], 'SubmitTimes': [], 'JobIds': [], 'EndTimes': [], 'Restarts': 0, 'State': 'unsubmitted', 'ResidentSetSize': [], 'TotalUserCpuTimeHistory': [], 'SiteHistory': [], 'TotalSysCpuTimeHistory': []}, '27': {'Retries': 0, 'WallDurations': [], 'StartTimes': [], 'SubmitTimes': [], 'JobIds': [], 'EndTimes': [], 'Restarts': 0, 'State': 'unsubmitted', 'ResidentSetSize': [], 'TotalUserCpuTimeHistory': [], 'SiteHistory': [], 'TotalSysCpuTimeHistory': []}, '20': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241635.0], 'JobIds': ['14592634.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '21': {'Retries': 0, 'WallDurations': [], 'StartTimes': [], 'SubmitTimes': [], 'JobIds': [], 'EndTimes': [], 'Restarts': 0, 'State': 'unsubmitted', 'ResidentSetSize': [], 'TotalUserCpuTimeHistory': [], 'SiteHistory': [], 'TotalSysCpuTimeHistory': []}, '22': {'Retries': 0, 'WallDurations': [], 'StartTimes': [], 'SubmitTimes': [], 'JobIds': [], 'EndTimes': [], 'Restarts': 0, 'State': 'unsubmitted', 'ResidentSetSize': [], 'TotalUserCpuTimeHistory': [], 'SiteHistory': [], 'TotalSysCpuTimeHistory': []}, '23': {'Retries': 0, 'WallDurations': [], 'StartTimes': [], 'SubmitTimes': [], 'JobIds': [], 'EndTimes': [], 'Restarts': 0, 'State': 'unsubmitted', 'ResidentSetSize': [], 'TotalUserCpuTimeHistory': [], 'SiteHistory': [], 'TotalSysCpuTimeHistory': []}, '28': {'Retries': 0, 'WallDurations': [], 'StartTimes': [], 'SubmitTimes': [], 'JobIds': [], 'EndTimes': [], 'Restarts': 0, 'State': 'unsubmitted', 'ResidentSetSize': [], 'TotalUserCpuTimeHistory': [], 'SiteHistory': [], 'TotalSysCpuTimeHistory': []}, '1': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241604.0], 'JobIds': ['14592614.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '3': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241605.0], 'JobIds': ['14592616.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '2': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241604.0], 'JobIds': ['14592615.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '5': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241606.0], 'JobIds': ['14592618.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '4': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241605.0], 'JobIds': ['14592617.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '7': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241606.0], 'JobIds': ['14592620.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '6': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241606.0], 'JobIds': ['14592619.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '9': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241606.0], 'JobIds': ['14592622.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '8': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241606.0], 'JobIds': ['14592621.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '11': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241607.0], 'JobIds': ['14592624.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '10': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241607.0], 'JobIds': ['14592623.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '13': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241608.0], 'JobIds': ['14592626.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '12': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241607.0], 'JobIds': ['14592625.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '15': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241615.0], 'JobIds': ['14592629.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '14': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241613.0], 'JobIds': ['14592628.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '17': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241616.0], 'JobIds': ['14592631.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '16': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241616.0], 'JobIds': ['14592630.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '19': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241619.0], 'JobIds': ['14592633.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}, '18': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1512241618.0], 'JobIds': ['14592632.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}}
+INFO 2017-12-02 20:08:29,430: 	 Status on the scheduler:	SUBMITTED
+INFO 2017-12-02 20:08:29,430: 	 
+Jobs status:                    idle           71.4% (20/28)
+INFO 2017-12-02 20:08:29,430: 	 				unsubmitted    28.6% ( 8/28)
+INFO 2017-12-02 20:08:29,430: 	 
+No publication information available yet
+INFO 2017-12-02 20:08:29,458: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/crab.log
+DEBUG 2017-12-03 11:26:33,515: 	 Executing command: 'getoutput'
+DEBUG 2017-12-03 11:26:33,516: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2017-12-03 11:26:33,523: 	 Checking credentials
+DEBUG 2017-12-03 11:26:33,524: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-12-03 11:26:33,524: 	 Getting proxy life time left
+DEBUG 2017-12-03 11:26:34,329: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 86145
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:35,049: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 86144
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:35,049: 	 Proxy valid for 23:55:45 hours
+DEBUG 2017-12-03 11:26:35,112: 	 Using VO group '' and VO role 'NULL' as written in the request cache file for this task.
+DEBUG 2017-12-03 11:26:35,230: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:35,230: 	 Checking credentials
+DEBUG 2017-12-03 11:26:35,230: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-12-03 11:26:35,230: 	 Getting proxy life time left
+DEBUG 2017-12-03 11:26:35,835: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 86144
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:36,653: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 86143
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:36,653: 	 Proxy valid for 23:55:44 hours
+DEBUG 2017-12-03 11:26:37,159: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u93494 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:38,061: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-12-03 11:26:38,172: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:38,172: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-12-03 11:26:38,172: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2017-12-03 11:26:38,476: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 631:06:14  (26.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:38,477: 	 Myproxy is valid: 2271974
+DEBUG 2017-12-03 11:26:38,477: 	 Command use: getoutput
+DEBUG 2017-12-03 11:26:38,477: 	 Options use: ['-d', 'crab_projects/crab_plots_Zee_cut_eraD/']
+DEBUG 2017-12-03 11:26:39,378: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-12-03 11:26:39,378: 	 Instance is prod
+DEBUG 2017-12-03 11:26:39,378: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-12-03 11:26:39,378: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-12-03 11:26:39,378: 	 Executing command: 'status'
+DEBUG 2017-12-03 11:26:39,378: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2017-12-03 11:26:39,389: 	 Checking credentials
+DEBUG 2017-12-03 11:26:39,389: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-12-03 11:26:39,389: 	 Getting proxy life time left
+DEBUG 2017-12-03 11:26:39,998: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 86140
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:40,604: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 86139
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:40,604: 	 Proxy valid for 23:55:40 hours
+DEBUG 2017-12-03 11:26:40,788: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:40,789: 	 Checking credentials
+DEBUG 2017-12-03 11:26:40,789: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-12-03 11:26:40,789: 	 Getting proxy life time left
+DEBUG 2017-12-03 11:26:41,294: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 86138
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:41,798: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 86138
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:41,798: 	 Proxy valid for 23:55:38 hours
+DEBUG 2017-12-03 11:26:42,710: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-12-03 11:26:42,824: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:42,825: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-12-03 11:26:42,825: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2017-12-03 11:26:43,028: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 631:06:10  (26.3 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-12-03 11:26:43,029: 	 Myproxy is valid: 2271970
+DEBUG 2017-12-03 11:26:43,029: 	 Command use: status
+DEBUG 2017-12-03 11:26:43,029: 	 Options use: []
+DEBUG 2017-12-03 11:26:43,935: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-12-03 11:26:43,935: 	 Instance is prod
+DEBUG 2017-12-03 11:26:43,935: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-12-03 11:26:43,935: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-12-03 11:26:44,861: 	 Got information from server oracle database: {u'result': [u'171202_190523:psiddire_crab_plots_Zee_cut_eraD', u'None', u'SUBMITTED', u'2017-12-02 19:05:24.149514', u'None', u'2017-12-02 19:06:23.952324', u'None', u'CMSSW_9_3_0', u'slc6_amd64_gcc630', u'/DoubleEG/Run2017D-PromptReco-v1/MINIAOD', u'[]', u'[]', u'LumiBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['1,96,102,401,403,446,448,675,678,818', '1,40,44,46', '1,20', '1,2,18,20', '10,10', '1,174', '1,72', '1,523', '1,228', '71,811,818,943', '33,140', '32,671,674,1230', '1,85', '1,16', '48,133,136,923', '53,78,81,293', '1,457', '1,960', '37,471', '1,1250', '15,17,22,192,194,391', '1,71', '1,152', '33,870', '42,722', '27,162', '1,72', '1,98', '1,482', '1,136', '27,157,164,717', '45,407', '1,887', '21,312,317,442,445,483,486,1926', '28,808', '1,368,398,406', '1,305', '1,7', '1,259', '30,222,225,340', '8,176', '1,922', '1,21,23,59', '1,7', '1,618', '73,92', '37,89', '29,46', '1,59', '1,677,747,778', '1,534,545,582', '40,124', '1,7', '1,188', '1,7', '1,11', '40,46', '1,7', '1,291', '1,693,730,1285', '47,534,545,705,710,986', '1,1054', '37,73,75,123,125,129,133,165,168,175,177,216,218,358,361,375,378,404,407,423,425,503,505,578,581,594,596,638', '1,22,24,28,30,39,41,53,55,132,134,144,146,265,267,271,274,344,347,357,359,375,378,384,386,414,416,494,497,608,611,634,637,684,687,706,708,724,726,901,904,954,957,982,984,1072,1075,1124,1126,1129,1132,1206,1209,1234,1236,1291', '1,149', '1,317', '1,72', '1,706'], 'runs': ['302031', '302033', '302034', '302037', '302038', '302040', '302041', '302042', '302043', '302131', '302159', '302163', '302165', '302166', '302225', '302228', '302229', '302240', '302262', '302263', '302277', '302279', '302280', '302322', '302328', '302337', '302342', '302343', '302344', '302350', '302388', '302392', '302393', '302448', '302472', '302473', '302474', '302475', '302476', '302479', '302484', '302485', '302492', '302493', '302494', '302509', '302513', '302522', '302523', '302525', '302526', '302548', '302551', '302553', '302554', '302555', '302563', '302565', '302572', '302573', '302596', '302597', '302634', '302635', '302651', '302654', '302661', '302663'], 'lumis_per_job': 1000}", u'0', u'b39135b29be84130ddacb34a6c3617a14dc462e1f26b1310ebb742b6fd1d5b64.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'psiddire', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy', u'cms', u'None', u'None', u'Zee_ElectronPlots_cut_eraD-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0119.cern.ch/mon/cms1092/171202_190523:psiddire_crab_plots_Zee_cut_eraD', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['ntuple_skim_eraD.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0119.cern.ch', u'F', u'[]', u'T', u'/store/user/psiddire/', u'F', u'None', u'F', u'F', u'F', u'None', u'DoubleEG', u'filetransfers', u'SUBMIT', u'14592612', u'd29bd0032d17ca5cecb0b4ce829dc4a12d926fdcd775b56b99422cca2e36ab7f.tar.gz', u'188.184.89.161', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-12-03 11:26:44,862: 	 CRAB project directory:		/afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD
+INFO 2017-12-03 11:26:44,862: 	 Task name:			171202_190523:psiddire_crab_plots_Zee_cut_eraD
+INFO 2017-12-03 11:26:44,862: 	 Grid scheduler:			crab3@vocms0119.cern.ch
+INFO 2017-12-03 11:26:44,862: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-12-03 11:26:44,862: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171202_190523%3Apsiddire_crab_plots_Zee_cut_eraD
+INFO 2017-12-03 11:26:44,862: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=psiddire&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171202_190523%3Apsiddire_crab_plots_Zee_cut_eraD
+DEBUG 2017-12-03 11:26:44,862: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 14592612)
+DEBUG 2017-12-03 11:26:44,862: 	 Webdir is located at http://vocms0119.cern.ch/mon/cms1092/171202_190523:psiddire_crab_plots_Zee_cut_eraD
+DEBUG 2017-12-03 11:26:45,741: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0119/cms1092/171202_190523:psiddire_crab_plots_Zee_cut_eraD
+DEBUG 2017-12-03 11:26:45,741: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0119/cms1092/171202_190523:psiddire_crab_plots_Zee_cut_eraD/status_cache
+DEBUG 2017-12-03 11:26:46,574: 	 Got information from status cache file: {'24': {'Retries': 0, 'WallDurations': [1469.0], 'StartTimes': [1512241982.0], 'SubmitTimes': [1512241673.0], 'JobIds': ['14592639.0'], 'EndTimes': [1512243451.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [683512], 'TotalUserCpuTimeHistory': [1239], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [108]}, '25': {'Retries': 0, 'WallDurations': [1739.0], 'StartTimes': [1512241979.0], 'SubmitTimes': [1512241665.0], 'JobIds': ['14592638.0'], 'EndTimes': [1512243718.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [689324], 'TotalUserCpuTimeHistory': [1457], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [142]}, '26': {'Retries': 0, 'WallDurations': [1573.0], 'StartTimes': [1512242201.0], 'SubmitTimes': [1512241675.0], 'JobIds': ['14592641.0'], 'EndTimes': [1512243774.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [681212], 'TotalUserCpuTimeHistory': [1359], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [109]}, '27': {'Retries': 0, 'WallDurations': [1878.0], 'StartTimes': [1512241980.0], 'SubmitTimes': [1512241674.0], 'JobIds': ['14592640.0'], 'EndTimes': [1512243858.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [687080], 'TotalUserCpuTimeHistory': [1628], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [134]}, '20': {'Retries': 0, 'WallDurations': [1659.0], 'StartTimes': [1512241977.0], 'SubmitTimes': [1512241635.0], 'JobIds': ['14592634.0'], 'EndTimes': [1512243636.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [705720], 'TotalUserCpuTimeHistory': [1320], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [103]}, '21': {'Retries': 0, 'WallDurations': [1672.0], 'StartTimes': [1512241978.0], 'SubmitTimes': [1512241685.0], 'JobIds': ['14592648.0'], 'EndTimes': [1512243650.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [681236], 'TotalUserCpuTimeHistory': [1222], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [101]}, '22': {'Retries': 0, 'WallDurations': [3588.0], 'StartTimes': [1512241980.0], 'SubmitTimes': [1512241662.0], 'JobIds': ['14592637.0'], 'EndTimes': [1512245568.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [1280784], 'TotalUserCpuTimeHistory': [1515], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [166]}, '23': {'Retries': 0, 'WallDurations': [1759.0], 'StartTimes': [1512241979.0], 'SubmitTimes': [1512241653.0], 'JobIds': ['14592636.0'], 'EndTimes': [1512243738.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [686448], 'TotalUserCpuTimeHistory': [1508], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [128]}, '28': {'Retries': 0, 'WallDurations': [212.0], 'StartTimes': [1512241980.0], 'SubmitTimes': [1512241679.0], 'JobIds': ['14592642.0'], 'EndTimes': [1512242192.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [9208], 'TotalUserCpuTimeHistory': [121], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [10]}, '1': {'Retries': 0, 'WallDurations': [1376.0], 'StartTimes': [1512241977.0], 'SubmitTimes': [1512241604.0], 'JobIds': ['14592614.0'], 'EndTimes': [1512243353.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [722664], 'TotalUserCpuTimeHistory': [943], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [90]}, '3': {'Retries': 0, 'WallDurations': [1968.0], 'StartTimes': [1512241979.0], 'SubmitTimes': [1512241605.0], 'JobIds': ['14592616.0'], 'EndTimes': [1512243947.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [697224], 'TotalUserCpuTimeHistory': [1574], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [108]}, '2': {'Retries': 0, 'WallDurations': [841.0], 'StartTimes': [1512241979.0], 'SubmitTimes': [1512241604.0], 'JobIds': ['14592615.0'], 'EndTimes': [1512242820.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [699696], 'TotalUserCpuTimeHistory': [651], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [50]}, '5': {'Retries': 0, 'WallDurations': [1227.0], 'StartTimes': [1512242009.0], 'SubmitTimes': [1512241606.0], 'JobIds': ['14592618.0'], 'EndTimes': [1512243236.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [697000], 'TotalUserCpuTimeHistory': [938], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [75]}, '4': {'Retries': 0, 'WallDurations': [1008.0], 'StartTimes': [1512241979.0], 'SubmitTimes': [1512241605.0], 'JobIds': ['14592617.0'], 'EndTimes': [1512242987.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [700892], 'TotalUserCpuTimeHistory': [763], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [59]}, '7': {'Retries': 0, 'WallDurations': [1941.0], 'StartTimes': [1512241980.0], 'SubmitTimes': [1512241606.0], 'JobIds': ['14592620.0'], 'EndTimes': [1512243921.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [698820], 'TotalUserCpuTimeHistory': [1185], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [131]}, '6': {'Retries': 0, 'WallDurations': [1515.0], 'StartTimes': [1512241982.0], 'SubmitTimes': [1512241606.0], 'JobIds': ['14592619.0'], 'EndTimes': [1512243497.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [680520], 'TotalUserCpuTimeHistory': [1258], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [103]}, '9': {'Retries': 0, 'WallDurations': [1345.0], 'StartTimes': [1512241994.0], 'SubmitTimes': [1512241606.0], 'JobIds': ['14592622.0'], 'EndTimes': [1512243339.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [726712], 'TotalUserCpuTimeHistory': [1097], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [88]}, '8': {'Retries': 0, 'WallDurations': [1080.0], 'StartTimes': [1512241977.0], 'SubmitTimes': [1512241606.0], 'JobIds': ['14592621.0'], 'EndTimes': [1512243057.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [696712], 'TotalUserCpuTimeHistory': [819], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [60]}, '11': {'Retries': 0, 'WallDurations': [1179.0], 'StartTimes': [1512241979.0], 'SubmitTimes': [1512241607.0], 'JobIds': ['14592624.0'], 'EndTimes': [1512243158.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [681212], 'TotalUserCpuTimeHistory': [949], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [94]}, '10': {'Retries': 0, 'WallDurations': [1203.0], 'StartTimes': [1512241978.0], 'SubmitTimes': [1512241607.0], 'JobIds': ['14592623.0'], 'EndTimes': [1512243181.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [682376], 'TotalUserCpuTimeHistory': [1020], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [89]}, '13': {'Retries': 0, 'WallDurations': [1320.0], 'StartTimes': [1512241978.0], 'SubmitTimes': [1512241608.0], 'JobIds': ['14592626.0'], 'EndTimes': [1512243298.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [682728], 'TotalUserCpuTimeHistory': [1107], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [105]}, '12': {'Retries': 0, 'WallDurations': [1418.0], 'StartTimes': [1512241989.0], 'SubmitTimes': [1512241607.0], 'JobIds': ['14592625.0'], 'EndTimes': [1512243407.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [684024], 'TotalUserCpuTimeHistory': [1143], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [95]}, '15': {'Retries': 0, 'WallDurations': [1504.0], 'StartTimes': [1512241996.0], 'SubmitTimes': [1512241615.0], 'JobIds': ['14592629.0'], 'EndTimes': [1512243500.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [711888], 'TotalUserCpuTimeHistory': [1227], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [116]}, '14': {'Retries': 0, 'WallDurations': [1230.0], 'StartTimes': [1512241980.0], 'SubmitTimes': [1512241613.0], 'JobIds': ['14592628.0'], 'EndTimes': [1512243210.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [691832], 'TotalUserCpuTimeHistory': [939], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [113]}, '17': {'Retries': 0, 'WallDurations': [1411.0], 'StartTimes': [1512241979.0], 'SubmitTimes': [1512241616.0], 'JobIds': ['14592631.0'], 'EndTimes': [1512243390.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [694572], 'TotalUserCpuTimeHistory': [1043], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [87]}, '16': {'Retries': 0, 'WallDurations': [1485.0], 'StartTimes': [1512241990.0], 'SubmitTimes': [1512241616.0], 'JobIds': ['14592630.0'], 'EndTimes': [1512243475.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [682484], 'TotalUserCpuTimeHistory': [1191], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [93]}, '19': {'Retries': 0, 'WallDurations': [2205.0], 'StartTimes': [1512241978.0], 'SubmitTimes': [1512241619.0], 'JobIds': ['14592633.0'], 'EndTimes': [1512244183.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [720840], 'TotalUserCpuTimeHistory': [1731], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [161]}, '18': {'Retries': 0, 'WallDurations': [1688.0], 'StartTimes': [1512241999.0], 'SubmitTimes': [1512241618.0], 'JobIds': ['14592632.0'], 'EndTimes': [1512243687.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [692736], 'TotalUserCpuTimeHistory': [1343], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [107]}}
+INFO 2017-12-03 11:26:46,574: 	 Status on the scheduler:	COMPLETED
+INFO 2017-12-03 11:26:46,575: 	 
+Jobs status:                    finished      100.0% (28/28)
+INFO 2017-12-03 11:26:47,505: 	 
+No publication information available yet
+DEBUG 2017-12-03 11:26:48,427: 	 Server result: {u'result': [u'171202_190523:psiddire_crab_plots_Zee_cut_eraD', u'None', u'SUBMITTED', u'2017-12-02 19:05:24.149514', u'None', u'2017-12-02 19:06:23.952324', u'None', u'CMSSW_9_3_0', u'slc6_amd64_gcc630', u'/DoubleEG/Run2017D-PromptReco-v1/MINIAOD', u'[]', u'[]', u'LumiBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'lumis': ['1,96,102,401,403,446,448,675,678,818', '1,40,44,46', '1,20', '1,2,18,20', '10,10', '1,174', '1,72', '1,523', '1,228', '71,811,818,943', '33,140', '32,671,674,1230', '1,85', '1,16', '48,133,136,923', '53,78,81,293', '1,457', '1,960', '37,471', '1,1250', '15,17,22,192,194,391', '1,71', '1,152', '33,870', '42,722', '27,162', '1,72', '1,98', '1,482', '1,136', '27,157,164,717', '45,407', '1,887', '21,312,317,442,445,483,486,1926', '28,808', '1,368,398,406', '1,305', '1,7', '1,259', '30,222,225,340', '8,176', '1,922', '1,21,23,59', '1,7', '1,618', '73,92', '37,89', '29,46', '1,59', '1,677,747,778', '1,534,545,582', '40,124', '1,7', '1,188', '1,7', '1,11', '40,46', '1,7', '1,291', '1,693,730,1285', '47,534,545,705,710,986', '1,1054', '37,73,75,123,125,129,133,165,168,175,177,216,218,358,361,375,378,404,407,423,425,503,505,578,581,594,596,638', '1,22,24,28,30,39,41,53,55,132,134,144,146,265,267,271,274,344,347,357,359,375,378,384,386,414,416,494,497,608,611,634,637,684,687,706,708,724,726,901,904,954,957,982,984,1072,1075,1124,1126,1129,1132,1206,1209,1234,1236,1291', '1,149', '1,317', '1,72', '1,706'], 'runs': ['302031', '302033', '302034', '302037', '302038', '302040', '302041', '302042', '302043', '302131', '302159', '302163', '302165', '302166', '302225', '302228', '302229', '302240', '302262', '302263', '302277', '302279', '302280', '302322', '302328', '302337', '302342', '302343', '302344', '302350', '302388', '302392', '302393', '302448', '302472', '302473', '302474', '302475', '302476', '302479', '302484', '302485', '302492', '302493', '302494', '302509', '302513', '302522', '302523', '302525', '302526', '302548', '302551', '302553', '302554', '302555', '302563', '302565', '302572', '302573', '302596', '302597', '302634', '302635', '302651', '302654', '302661', '302663'], 'lumis_per_job': 1000}", u'0', u'b39135b29be84130ddacb34a6c3617a14dc462e1f26b1310ebb742b6fd1d5b64.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'psiddire', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy', u'cms', u'None', u'None', u'Zee_ElectronPlots_cut_eraD-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0119.cern.ch/mon/cms1092/171202_190523:psiddire_crab_plots_Zee_cut_eraD', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['ntuple_skim_eraD.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0119.cern.ch', u'F', u'[]', u'T', u'/store/user/psiddire/', u'F', u'None', u'F', u'F', u'F', u'None', u'DoubleEG', u'filetransfers', u'SUBMIT', u'14592612', u'd29bd0032d17ca5cecb0b4ce829dc4a12d926fdcd775b56b99422cca2e36ab7f.tar.gz', u'188.184.89.161', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+DEBUG 2017-12-03 11:26:48,427: 	 Retrieving locations for task 171202_190523:psiddire_crab_plots_Zee_cut_eraD
+DEBUG 2017-12-03 11:26:48,427: 	 Retrieving all file locations
+DEBUG 2017-12-03 11:26:48,427: 	 Retrieving jobs [('jobids', '24'), ('jobids', '25'), ('jobids', '26'), ('jobids', '27'), ('jobids', '20'), ('jobids', '21'), ('jobids', '22'), ('jobids', '23'), ('jobids', '28'), ('jobids', '1'), ('jobids', '3'), ('jobids', '2'), ('jobids', '5'), ('jobids', '4'), ('jobids', '7'), ('jobids', '6'), ('jobids', '9'), ('jobids', '8'), ('jobids', '11'), ('jobids', '10'), ('jobids', '13'), ('jobids', '12'), ('jobids', '15'), ('jobids', '14'), ('jobids', '17'), ('jobids', '16'), ('jobids', '19'), ('jobids', '18')]
+DEBUG 2017-12-03 11:26:49,314: 	 Server result: {u'result': [{u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'840406', u'cksum': 4117087723, u'md5': u'840406'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_27.root', u'site': u'T2_CH_CERN', u'jobid': u'27', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_27.root', u'size': 8733, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'9f007272', u'cksum': 3690774888, u'md5': u'9f007272'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_26.root', u'site': u'T2_CH_CERN', u'jobid': u'26', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_26.root', u'size': 9140, u'directstageout': u'F'}, {u'tmpsite': u'T3_UK_ScotGrid_GLA', u'checksum': {u'adler32': u'5da588a0', u'cksum': 2119475961, u'md5': u'5da588a0'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_22.root', u'site': u'T2_CH_CERN', u'jobid': u'22', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_22.root', u'size': 8632, u'directstageout': u'T'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'6dcebc77', u'cksum': 1052715934, u'md5': u'6dcebc77'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_23.root', u'site': u'T2_CH_CERN', u'jobid': u'23', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_23.root', u'size': 8706, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'269ea5c2', u'cksum': 3515474835, u'md5': u'269ea5c2'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_25.root', u'site': u'T2_CH_CERN', u'jobid': u'25', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_25.root', u'size': 8665, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'7672eeea', u'cksum': 478048816, u'md5': u'7672eeea'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_18.root', u'site': u'T2_CH_CERN', u'jobid': u'18', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_18.root', u'size': 8701, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'2c3d4b29', u'cksum': 719104696, u'md5': u'2c3d4b29'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_6.root', u'site': u'T2_CH_CERN', u'jobid': u'6', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_6.root', u'size': 10566, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'a4f6ad9f', u'cksum': 1864329048, u'md5': u'a4f6ad9f'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_15.root', u'site': u'T2_CH_CERN', u'jobid': u'15', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_15.root', u'size': 8652, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'4998a25c', u'cksum': 2733774959, u'md5': u'4998a25c'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_16.root', u'site': u'T2_CH_CERN', u'jobid': u'16', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_16.root', u'size': 8676, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'7b65108c', u'cksum': 3943834899, u'md5': u'7b65108c'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_24.root', u'site': u'T2_CH_CERN', u'jobid': u'24', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_24.root', u'size': 11105, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'628286b1', u'cksum': 2750466342, u'md5': u'628286b1'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_12.root', u'site': u'T2_CH_CERN', u'jobid': u'12', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_12.root', u'size': 8662, u'directstageout': u'F'}, {u'tmpsite': u'T2_UK_London_Brunel', u'checksum': {u'adler32': u'f660bf75', u'cksum': 245302150, u'md5': u'f660bf75'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_1.root', u'site': u'T2_CH_CERN', u'jobid': u'1', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_1.root', u'size': 8670, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'e44ea24f', u'cksum': 14734117, u'md5': u'e44ea24f'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_9.root', u'site': u'T2_CH_CERN', u'jobid': u'9', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_9.root', u'size': 8628, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'9734c2d1', u'cksum': 77041667, u'md5': u'9734c2d1'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_13.root', u'site': u'T2_CH_CERN', u'jobid': u'13', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_13.root', u'size': 8707, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'7e4f81b3', u'cksum': 2920769189, u'md5': u'7e4f81b3'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_5.root', u'site': u'T2_CH_CERN', u'jobid': u'5', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_5.root', u'size': 8622, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'e8c6d7a1', u'cksum': 2264082932, u'md5': u'e8c6d7a1'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_14.root', u'site': u'T2_CH_CERN', u'jobid': u'14', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_14.root', u'size': 8683, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'972c148b', u'cksum': 3423501896, u'md5': u'972c148b'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_10.root', u'site': u'T2_CH_CERN', u'jobid': u'10', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_10.root', u'size': 11077, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'4d8f924f', u'cksum': 1520199240, u'md5': u'4d8f924f'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_11.root', u'site': u'T2_CH_CERN', u'jobid': u'11', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_11.root', u'size': 8626, u'directstageout': u'F'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'bd0fb1e0', u'cksum': 2710010043, u'md5': u'bd0fb1e0'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_19.root', u'site': u'T2_CH_CERN', u'jobid': u'19', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_19.root', u'size': 8670, u'directstageout': u'T'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'245a1893', u'cksum': 2731127648, u'md5': u'245a1893'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_28.root', u'site': u'T2_CH_CERN', u'jobid': u'28', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_28.root', u'size': 8291, u'directstageout': u'F'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'd9e5b45e', u'cksum': 2572881502, u'md5': u'd9e5b45e'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_3.root', u'site': u'T2_CH_CERN', u'jobid': u'3', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_3.root', u'size': 8623, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'56f7b1b8', u'cksum': 1515747317, u'md5': u'56f7b1b8'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_7.root', u'site': u'T2_CH_CERN', u'jobid': u'7', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_7.root', u'size': 8645, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'affcaa7a', u'cksum': 474666618, u'md5': u'affcaa7a'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_21.root', u'site': u'T2_CH_CERN', u'jobid': u'21', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_21.root', u'size': 8673, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'c9acabbd', u'cksum': 2810982794, u'md5': u'c9acabbd'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_20.root', u'site': u'T2_CH_CERN', u'jobid': u'20', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_20.root', u'size': 8643, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'df71b053', u'cksum': 1256721066, u'md5': u'df71b053'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_17.root', u'site': u'T2_CH_CERN', u'jobid': u'17', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_17.root', u'size': 8639, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'7e4eb8df', u'cksum': 116725371, u'md5': u'7e4eb8df'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_8.root', u'site': u'T2_CH_CERN', u'jobid': u'8', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_8.root', u'size': 8645, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'26ec8f0b', u'cksum': 2889684983, u'md5': u'26ec8f0b'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_4.root', u'site': u'T2_CH_CERN', u'jobid': u'4', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_4.root', u'size': 8598, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'6268559', u'cksum': 3710909236, u'md5': u'6268559'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_2.root', u'site': u'T2_CH_CERN', u'jobid': u'2', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_2.root', u'size': 8553, u'directstageout': u'T'}]}
+DEBUG 2017-12-03 11:26:49,314: 	 Service initialised ({'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u93494', 'maxcachereuse': 24.0, 'cachepath': '/tmp/psiddire/.wmcore_cache_OfVT04/cmsweb.cern.ch', 'inputdata': {}, 'cert': '/tmp/x509up_u93494', 'timeout': 300, 'service_name': 'PhEDEx', 'requests': {'content_type': 'application/x-www-form-urlencoded', 'cacheduration': 0, 'host': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'accept_type': 'text/html', 'key': '/tmp/x509up_u93494', 'deleteCacheOnExit': <WMCore.Services.Requests.TempDirectory object at 0x7f81c0076e90>, 'endpoint_components': ParseResult(scheme='https', netloc='cmsweb.cern.ch', path='/phedex/datasvc/json/prod/', params='', query='', fragment=''), 'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'pycurl': True, 'cachepath': '/tmp/psiddire/.wmcore_cache_OfVT04/cmsweb.cern.ch', 'cert': '/tmp/x509up_u93494', 'timeout': 300, 'req_cache_path': '/tmp/psiddire/.wmcore_cache_OfVT04/cmsweb.cern.ch/.cache', 'logger': <logging.Logger object at 0x7f81c0055550>}, 'logger': <logging.Logger object at 0x7f81c0055550>, 'cacheduration': 0, 'method': None, 'pycurl': True}):
+	 host: cmsweb.cern.ch, basepath: https://cmsweb.cern.ch/phedex/datasvc/json/prod/ (text/html)
+	 cache: /tmp/psiddire/.wmcore_cache_OfVT04/cmsweb.cern.ch (duration 0 hours, max reuse 24.0 hours)
+DEBUG 2017-12-03 11:26:49,314: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_27.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:26:50,196: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_26.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:26:51,050: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_22.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:26:51,914: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_23.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:26:52,779: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_25.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:26:53,658: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_18.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:26:54,515: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_6.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:26:55,407: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_15.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:26:56,283: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_16.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:26:57,173: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_24.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:26:58,062: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_12.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:26:58,905: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_1.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:26:59,769: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_9.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:00,654: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_13.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:01,580: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_5.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:02,457: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_14.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:03,320: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_10.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:04,194: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_11.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:05,106: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_19.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:05,967: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_28.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:06,828: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_3.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:07,685: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_7.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:08,584: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_21.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:09,537: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_20.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:10,406: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_17.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:11,280: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_8.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:12,162: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_4.root', 'protocol': 'srmv2'}
+DEBUG 2017-12-03 11:27:13,044: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_2.root', 'protocol': 'srmv2'}
+INFO 2017-12-03 11:27:13,915: 	 Setting the destination to /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results 
+INFO 2017-12-03 11:27:13,915: 	 Retrieving 28 files
+DEBUG 2017-12-03 11:27:13,915: 	 Executing command: 'remote_copy'
+DEBUG 2017-12-03 11:27:13,915: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2017-12-03 11:27:14,007: 	 Skipping proxy creation
+DEBUG 2017-12-03 11:27:14,008: 	 Command use: remote_copy
+DEBUG 2017-12-03 11:27:14,008: 	 Options use: ['--destination', '/afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results', '--input', [{u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'840406', u'cksum': 4117087723, u'md5': u'840406'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_27.root', u'site': u'T2_CH_CERN', u'jobid': u'27', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_27.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_27.root', u'size': 8733, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'9f007272', u'cksum': 3690774888, u'md5': u'9f007272'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_26.root', u'site': u'T2_CH_CERN', u'jobid': u'26', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_26.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_26.root', u'size': 9140, u'directstageout': u'F'}, {u'tmpsite': u'T3_UK_ScotGrid_GLA', u'checksum': {u'adler32': u'5da588a0', u'cksum': 2119475961, u'md5': u'5da588a0'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_22.root', u'site': u'T2_CH_CERN', u'jobid': u'22', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_22.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_22.root', u'size': 8632, u'directstageout': u'T'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'6dcebc77', u'cksum': 1052715934, u'md5': u'6dcebc77'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_23.root', u'site': u'T2_CH_CERN', u'jobid': u'23', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_23.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_23.root', u'size': 8706, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'269ea5c2', u'cksum': 3515474835, u'md5': u'269ea5c2'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_25.root', u'site': u'T2_CH_CERN', u'jobid': u'25', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_25.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_25.root', u'size': 8665, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'7672eeea', u'cksum': 478048816, u'md5': u'7672eeea'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_18.root', u'site': u'T2_CH_CERN', u'jobid': u'18', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_18.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_18.root', u'size': 8701, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'2c3d4b29', u'cksum': 719104696, u'md5': u'2c3d4b29'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_6.root', u'site': u'T2_CH_CERN', u'jobid': u'6', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_6.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_6.root', u'size': 10566, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'a4f6ad9f', u'cksum': 1864329048, u'md5': u'a4f6ad9f'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_15.root', u'site': u'T2_CH_CERN', u'jobid': u'15', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_15.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_15.root', u'size': 8652, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'4998a25c', u'cksum': 2733774959, u'md5': u'4998a25c'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_16.root', u'site': u'T2_CH_CERN', u'jobid': u'16', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_16.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_16.root', u'size': 8676, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'7b65108c', u'cksum': 3943834899, u'md5': u'7b65108c'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_24.root', u'site': u'T2_CH_CERN', u'jobid': u'24', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_24.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_24.root', u'size': 11105, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'628286b1', u'cksum': 2750466342, u'md5': u'628286b1'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_12.root', u'site': u'T2_CH_CERN', u'jobid': u'12', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_12.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_12.root', u'size': 8662, u'directstageout': u'F'}, {u'tmpsite': u'T2_UK_London_Brunel', u'checksum': {u'adler32': u'f660bf75', u'cksum': 245302150, u'md5': u'f660bf75'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_1.root', u'site': u'T2_CH_CERN', u'jobid': u'1', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_1.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_1.root', u'size': 8670, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'e44ea24f', u'cksum': 14734117, u'md5': u'e44ea24f'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_9.root', u'site': u'T2_CH_CERN', u'jobid': u'9', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_9.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_9.root', u'size': 8628, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'9734c2d1', u'cksum': 77041667, u'md5': u'9734c2d1'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_13.root', u'site': u'T2_CH_CERN', u'jobid': u'13', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_13.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_13.root', u'size': 8707, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_IIHE', u'checksum': {u'adler32': u'7e4f81b3', u'cksum': 2920769189, u'md5': u'7e4f81b3'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_5.root', u'site': u'T2_CH_CERN', u'jobid': u'5', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_5.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_5.root', u'size': 8622, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'e8c6d7a1', u'cksum': 2264082932, u'md5': u'e8c6d7a1'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_14.root', u'site': u'T2_CH_CERN', u'jobid': u'14', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_14.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_14.root', u'size': 8683, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'972c148b', u'cksum': 3423501896, u'md5': u'972c148b'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_10.root', u'site': u'T2_CH_CERN', u'jobid': u'10', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_10.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_10.root', u'size': 11077, u'directstageout': u'F'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'4d8f924f', u'cksum': 1520199240, u'md5': u'4d8f924f'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_11.root', u'site': u'T2_CH_CERN', u'jobid': u'11', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_11.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_11.root', u'size': 8626, u'directstageout': u'F'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'bd0fb1e0', u'cksum': 2710010043, u'md5': u'bd0fb1e0'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_19.root', u'site': u'T2_CH_CERN', u'jobid': u'19', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_19.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_19.root', u'size': 8670, u'directstageout': u'T'}, {u'tmpsite': u'T2_BE_UCL', u'checksum': {u'adler32': u'245a1893', u'cksum': 2731127648, u'md5': u'245a1893'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_28.root', u'site': u'T2_CH_CERN', u'jobid': u'28', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_28.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_28.root', u'size': 8291, u'directstageout': u'F'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'd9e5b45e', u'cksum': 2572881502, u'md5': u'd9e5b45e'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_3.root', u'site': u'T2_CH_CERN', u'jobid': u'3', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_3.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_3.root', u'size': 8623, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'56f7b1b8', u'cksum': 1515747317, u'md5': u'56f7b1b8'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_7.root', u'site': u'T2_CH_CERN', u'jobid': u'7', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_7.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_7.root', u'size': 8645, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'affcaa7a', u'cksum': 474666618, u'md5': u'affcaa7a'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_21.root', u'site': u'T2_CH_CERN', u'jobid': u'21', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_21.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_21.root', u'size': 8673, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'c9acabbd', u'cksum': 2810982794, u'md5': u'c9acabbd'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_20.root', u'site': u'T2_CH_CERN', u'jobid': u'20', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_20.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_20.root', u'size': 8643, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'df71b053', u'cksum': 1256721066, u'md5': u'df71b053'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_17.root', u'site': u'T2_CH_CERN', u'jobid': u'17', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_17.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_17.root', u'size': 8639, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'7e4eb8df', u'cksum': 116725371, u'md5': u'7e4eb8df'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_8.root', u'site': u'T2_CH_CERN', u'jobid': u'8', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_8.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_8.root', u'size': 8645, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'26ec8f0b', u'cksum': 2889684983, u'md5': u'26ec8f0b'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_4.root', u'site': u'T2_CH_CERN', u'jobid': u'4', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_4.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_4.root', u'size': 8598, u'directstageout': u'T'}, {u'tmpsite': u'T2_CH_CERN', u'checksum': {u'adler32': u'6268559', u'cksum': 3710909236, u'md5': u'6268559'}, u'lfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_2.root', u'site': u'T2_CH_CERN', u'jobid': u'2', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_2.root', u'tmplfn': u'/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_2.root', u'size': 8553, u'directstageout': u'T'}], '--dir', 'crab_projects/crab_plots_Zee_cut_eraD/', '--proxy', '/tmp/x509up_u93494', '--parallel', None, '--wait', None, '--checksum', 'ADLER32', '--command', None]
+DEBUG 2017-12-03 11:27:14,877: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-12-03 11:27:14,877: 	 Instance is prod
+DEBUG 2017-12-03 11:27:14,877: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-12-03 11:27:14,877: 	 Command url /crabserver/prod/workflow
+INFO 2017-12-03 11:27:14,881: 	 Will use `gfal-copy` command for file transfers
+DEBUG 2017-12-03 11:27:14,960: 	 Starting ChildProcess with 10 ChildProcess
+INFO 2017-12-03 11:27:15,013: 	 Placing file 'ntuple_skim_eraD_27.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,018: 	 Placing file 'ntuple_skim_eraD_26.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,022: 	 Placing file 'ntuple_skim_eraD_22.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,029: 	 Placing file 'ntuple_skim_eraD_23.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,035: 	 Placing file 'ntuple_skim_eraD_25.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,044: 	 Placing file 'ntuple_skim_eraD_18.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,057: 	 Placing file 'ntuple_skim_eraD_6.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,071: 	 Placing file 'ntuple_skim_eraD_15.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,078: 	 Placing file 'ntuple_skim_eraD_16.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,088: 	 Placing file 'ntuple_skim_eraD_24.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,137: 	 Placing file 'ntuple_skim_eraD_12.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,156: 	 Placing file 'ntuple_skim_eraD_1.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,175: 	 Placing file 'ntuple_skim_eraD_9.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,188: 	 Placing file 'ntuple_skim_eraD_13.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,215: 	 Placing file 'ntuple_skim_eraD_5.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,279: 	 Placing file 'ntuple_skim_eraD_14.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,299: 	 Placing file 'ntuple_skim_eraD_10.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,315: 	 Placing file 'ntuple_skim_eraD_11.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,343: 	 Placing file 'ntuple_skim_eraD_19.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,369: 	 Placing file 'ntuple_skim_eraD_28.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,397: 	 Placing file 'ntuple_skim_eraD_3.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,429: 	 Placing file 'ntuple_skim_eraD_7.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,451: 	 Placing file 'ntuple_skim_eraD_21.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,458: 	 Placing file 'ntuple_skim_eraD_20.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,472: 	 Placing file 'ntuple_skim_eraD_17.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,497: 	 Placing file 'ntuple_skim_eraD_8.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,504: 	 Placing file 'ntuple_skim_eraD_4.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,511: 	 Placing file 'ntuple_skim_eraD_2.root' in retrieval queue 
+INFO 2017-12-03 11:27:15,512: 	 Please wait
+DEBUG 2017-12-03 11:27:15,512: 	 stopchildproc() method has been called
+DEBUG 2017-12-03 11:27:17,391: 	 The output of the transfer subprocesses follows:
+DEBUG 2017-12-03 11:27:17,391: 	 	INFO 2017-12-03 11:27:15,015: 	 Retrieving ntuple_skim_eraD_27.root 
+DEBUG 2017-12-03 11:27:17,391: 	 	DEBUG 2017-12-03 11:27:15,015: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_27.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_27.root
+DEBUG 2017-12-03 11:27:17,391: 	 	INFO 2017-12-03 11:27:15,019: 	 Retrieving ntuple_skim_eraD_26.root 
+DEBUG 2017-12-03 11:27:17,391: 	 	DEBUG 2017-12-03 11:27:15,019: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_26.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_26.root
+DEBUG 2017-12-03 11:27:17,391: 	 	INFO 2017-12-03 11:27:15,024: 	 Retrieving ntuple_skim_eraD_22.root 
+DEBUG 2017-12-03 11:27:17,391: 	 	DEBUG 2017-12-03 11:27:15,024: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_22.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_22.root
+DEBUG 2017-12-03 11:27:17,391: 	 	INFO 2017-12-03 11:27:15,031: 	 Retrieving ntuple_skim_eraD_23.root 
+DEBUG 2017-12-03 11:27:17,391: 	 	DEBUG 2017-12-03 11:27:15,032: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_23.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_23.root
+DEBUG 2017-12-03 11:27:17,391: 	 	INFO 2017-12-03 11:27:15,037: 	 Retrieving ntuple_skim_eraD_25.root 
+DEBUG 2017-12-03 11:27:17,391: 	 	DEBUG 2017-12-03 11:27:15,037: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_25.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_25.root
+DEBUG 2017-12-03 11:27:17,391: 	 	INFO 2017-12-03 11:27:15,046: 	 Retrieving ntuple_skim_eraD_18.root 
+DEBUG 2017-12-03 11:27:17,391: 	 	DEBUG 2017-12-03 11:27:15,047: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_18.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_18.root
+DEBUG 2017-12-03 11:27:17,391: 	 	INFO 2017-12-03 11:27:15,060: 	 Retrieving ntuple_skim_eraD_6.root 
+DEBUG 2017-12-03 11:27:17,391: 	 	DEBUG 2017-12-03 11:27:15,060: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_6.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_6.root
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,075: 	 Retrieving ntuple_skim_eraD_15.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,076: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_15.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_15.root
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,079: 	 Retrieving ntuple_skim_eraD_16.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,080: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_16.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_16.root
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,089: 	 Retrieving ntuple_skim_eraD_24.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,089: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_24.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_24.root
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,723: 	 Finish executing for file ntuple_skim_eraD_25.root
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,724: 	 Success: Success in retrieving ntuple_skim_eraD_25.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,726: 	 Retrieving ntuple_skim_eraD_12.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,726: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_12.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_12.root
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,902: 	 Finish executing for file ntuple_skim_eraD_22.root
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,902: 	 Success: Success in retrieving ntuple_skim_eraD_22.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,941: 	 Finish executing for file ntuple_skim_eraD_27.root
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,941: 	 Success: Success in retrieving ntuple_skim_eraD_27.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,945: 	 Retrieving ntuple_skim_eraD_1.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,945: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_1.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_1.root
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,948: 	 Finish executing for file ntuple_skim_eraD_18.root
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,948: 	 Success: Success in retrieving ntuple_skim_eraD_18.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,955: 	 Finish executing for file ntuple_skim_eraD_24.root
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,956: 	 Success: Success in retrieving ntuple_skim_eraD_24.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,951: 	 Retrieving ntuple_skim_eraD_9.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,959: 	 Retrieving ntuple_skim_eraD_13.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,959: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_9.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_9.root
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,959: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_13.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_13.root
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,961: 	 Retrieving ntuple_skim_eraD_5.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,961: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_5.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_5.root
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,971: 	 Finish executing for file ntuple_skim_eraD_16.root
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,971: 	 Success: Success in retrieving ntuple_skim_eraD_16.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	INFO 2017-12-03 11:27:15,974: 	 Retrieving ntuple_skim_eraD_14.root 
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,974: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_14.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_14.root
+DEBUG 2017-12-03 11:27:17,392: 	 	DEBUG 2017-12-03 11:27:15,998: 	 Finish executing for file ntuple_skim_eraD_26.root
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:15,998: 	 Success: Success in retrieving ntuple_skim_eraD_26.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,001: 	 Retrieving ntuple_skim_eraD_10.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,001: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_10.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_10.root
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,008: 	 Finish executing for file ntuple_skim_eraD_23.root
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,008: 	 Success: Success in retrieving ntuple_skim_eraD_23.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,014: 	 Retrieving ntuple_skim_eraD_11.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,014: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_11.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_11.root
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,068: 	 Finish executing for file ntuple_skim_eraD_15.root
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,068: 	 Success: Success in retrieving ntuple_skim_eraD_15.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,077: 	 Retrieving ntuple_skim_eraD_19.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,078: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_19.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_19.root
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,084: 	 Finish executing for file ntuple_skim_eraD_6.root
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,084: 	 Success: Success in retrieving ntuple_skim_eraD_6.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,088: 	 Retrieving ntuple_skim_eraD_28.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,088: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_28.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_28.root
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,532: 	 Finish executing for file ntuple_skim_eraD_12.root
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,532: 	 Success: Success in retrieving ntuple_skim_eraD_12.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,533: 	 Retrieving ntuple_skim_eraD_3.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,533: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_3.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_3.root
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,577: 	 Finish executing for file ntuple_skim_eraD_10.root
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,577: 	 Success: Success in retrieving ntuple_skim_eraD_10.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,578: 	 Retrieving ntuple_skim_eraD_7.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,579: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_7.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_7.root
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,643: 	 Finish executing for file ntuple_skim_eraD_28.root
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,643: 	 Success: Success in retrieving ntuple_skim_eraD_28.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,644: 	 Retrieving ntuple_skim_eraD_21.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,644: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_21.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_21.root
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,684: 	 Finish executing for file ntuple_skim_eraD_1.root
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,684: 	 Success: Success in retrieving ntuple_skim_eraD_1.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,685: 	 Retrieving ntuple_skim_eraD_20.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,685: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_20.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_20.root
+DEBUG 2017-12-03 11:27:17,393: 	 	DEBUG 2017-12-03 11:27:16,740: 	 Finish executing for file ntuple_skim_eraD_14.root
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,740: 	 Success: Success in retrieving ntuple_skim_eraD_14.root 
+DEBUG 2017-12-03 11:27:17,393: 	 	INFO 2017-12-03 11:27:16,741: 	 Retrieving ntuple_skim_eraD_17.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:16,741: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_17.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_17.root
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:16,750: 	 Finish executing for file ntuple_skim_eraD_9.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:16,750: 	 Success: Success in retrieving ntuple_skim_eraD_9.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:16,751: 	 Retrieving ntuple_skim_eraD_8.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:16,751: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_8.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_8.root
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:16,760: 	 Finish executing for file ntuple_skim_eraD_19.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:16,760: 	 Success: Success in retrieving ntuple_skim_eraD_19.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:16,761: 	 Retrieving ntuple_skim_eraD_4.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:16,761: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_4.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_4.root
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:16,828: 	 Finish executing for file ntuple_skim_eraD_13.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:16,828: 	 Success: Success in retrieving ntuple_skim_eraD_13.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:16,830: 	 Retrieving ntuple_skim_eraD_2.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:16,830: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DoubleEG/Zee_ElectronPlots_cut_eraD/171202_190523/0000/ntuple_skim_eraD_2.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/results/ntuple_skim_eraD_2.root
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:16,842: 	 Finish executing for file ntuple_skim_eraD_11.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:16,843: 	 Success: Success in retrieving ntuple_skim_eraD_11.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:16,897: 	 Finish executing for file ntuple_skim_eraD_5.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:16,897: 	 Success: Success in retrieving ntuple_skim_eraD_5.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:17,050: 	 Finish executing for file ntuple_skim_eraD_21.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:17,051: 	 Success: Success in retrieving ntuple_skim_eraD_21.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:17,141: 	 Finish executing for file ntuple_skim_eraD_3.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:17,142: 	 Success: Success in retrieving ntuple_skim_eraD_3.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:17,233: 	 Finish executing for file ntuple_skim_eraD_7.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:17,233: 	 Success: Success in retrieving ntuple_skim_eraD_7.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:17,296: 	 Finish executing for file ntuple_skim_eraD_20.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:17,296: 	 Success: Success in retrieving ntuple_skim_eraD_20.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:17,299: 	 Finish executing for file ntuple_skim_eraD_17.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:17,299: 	 Success: Success in retrieving ntuple_skim_eraD_17.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:17,309: 	 Finish executing for file ntuple_skim_eraD_4.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:17,309: 	 Success: Success in retrieving ntuple_skim_eraD_4.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:17,324: 	 Finish executing for file ntuple_skim_eraD_8.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:17,324: 	 Success: Success in retrieving ntuple_skim_eraD_8.root 
+DEBUG 2017-12-03 11:27:17,394: 	 	DEBUG 2017-12-03 11:27:17,381: 	 Finish executing for file ntuple_skim_eraD_2.root
+DEBUG 2017-12-03 11:27:17,394: 	 	INFO 2017-12-03 11:27:17,381: 	 Success: Success in retrieving ntuple_skim_eraD_2.root 
+INFO 2017-12-03 11:27:17,515: 	 Success: All files successfully retrieved
+INFO 2017-12-03 11:27:17,589: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_eraD/crab.log

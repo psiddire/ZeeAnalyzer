@@ -1,0 +1,417 @@
+DEBUG 2017-11-23 14:22:00,547: 	 Executing command: 'submit'
+DEBUG 2017-11-23 14:22:00,548: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2017-11-23 14:22:00,557: 	 Checking credentials
+DEBUG 2017-11-23 14:22:00,558: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-11-23 14:22:00,558: 	 Getting proxy life time left
+DEBUG 2017-11-23 14:22:01,271: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 83395
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:22:01,780: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 83395
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:22:01,780: 	 Proxy valid for 23:09:55 hours
+INFO 2017-11-23 14:22:01,780: 	 Will use CRAB configuration file crab_ElectronPlots_MCecal.py
+DEBUG 2017-11-23 14:22:01,780: 	 Loading CRAB configuration file.
+DEBUG 2017-11-23 14:22:04,957: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-11-23 14:22:05,076: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:22:05,076: 	 Checking credentials
+DEBUG 2017-11-23 14:22:05,076: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-11-23 14:22:05,077: 	 Getting proxy life time left
+DEBUG 2017-11-23 14:22:05,585: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 83391
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:22:06,097: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 83390
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:22:06,098: 	 Proxy valid for 23:09:51 hours
+DEBUG 2017-11-23 14:22:06,608: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u93494 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:22:07,563: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-11-23 14:22:07,670: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:22:07,671: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-11-23 14:22:07,671: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2017-11-23 14:22:07,975: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 507:46:51  (21.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:22:07,976: 	 Myproxy is valid: 1828011
+DEBUG 2017-11-23 14:22:07,976: 	 Command use: submit
+DEBUG 2017-11-23 14:22:07,976: 	 Options use: ['-c', 'crab_ElectronPlots_MCecal.py']
+DEBUG 2017-11-23 14:22:08,867: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-11-23 14:22:08,867: 	 Instance is prod
+DEBUG 2017-11-23 14:22:08,868: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-11-23 14:22:08,868: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-11-23 14:22:08,868: 	 Started submission
+DEBUG 2017-11-23 14:22:08,868: 	 Working on /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal
+DEBUG 2017-11-23 14:22:09,885: 	 Loading required information from the environment
+DEBUG 2017-11-23 14:22:09,885: 	 Found CMSSW_9_3_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0
+DEBUG 2017-11-23 14:22:09,885: 	 Loading required information from the environment
+DEBUG 2017-11-23 14:22:09,887: 	 Found CMSSW_9_3_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0
+DEBUG 2017-11-23 14:22:09,907: 	 UNIQUE NAME: tarUUID c4ced0f2-3d51-407d-9435-c2cae0c03c2b 
+DEBUG 2017-11-23 14:22:09,907: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = True
+config.General.transferOutputs = True
+config.General.workArea = 'crab_projects'
+config.General.requestName = 'plots_Zee_cut_MCecal'
+config.section_('JobType')
+config.JobType.psetName = 'runElectronPlots_MCecal.py'
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDataset = '/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer17MiniAOD-92X_upgrade2017_realistic_Candidate_forECALStudies_ext1-v1/MINIAODSIM'
+config.Data.outputDatasetTag = 'Zee_ElectronPlots_cut_MCecal'
+config.Data.publication = True
+config.Data.unitsPerJob = 1000
+config.Data.inputDBS = 'global'
+config.Data.splitting = 'FileBased'
+config.Data.outLFNDirBase = '/store/user/psiddire/'
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2017-11-23 14:22:09,908: 	 self.config.JobType.psetName: runElectronPlots_MCecal.py
+INFO 2017-11-23 14:22:09,908: 	 Importing CMSSW configuration runElectronPlots_MCecal.py
+INFO 2017-11-23 14:22:10,121: 	 Finished importing CMSSW configuration runElectronPlots_MCecal.py
+DEBUG 2017-11-23 14:22:10,121: 	 Writing CMSSW configuration to /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal/inputs/PSet.py
+DEBUG 2017-11-23 14:22:10,161: 	 The following EDM output files will be collected: []
+DEBUG 2017-11-23 14:22:10,161: 	 The following TFile output files will be collected: ['ntuple_woskim_MCecal.root']
+DEBUG 2017-11-23 14:22:10,161: 	 The following user output files will be collected: []
+DEBUG 2017-11-23 14:22:10,161: 	 Loading required information from the environment
+DEBUG 2017-11-23 14:22:10,161: 	 Found CMSSW_9_3_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0
+DEBUG 2017-11-23 14:22:10,161: 	 Making tarball in /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal/inputs/c4ced0f2-3d51-407d-9435-c2cae0c03c2bdefault.tgz
+DEBUG 2017-11-23 14:22:10,182: 	 Checking directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/lib
+DEBUG 2017-11-23 14:22:10,182: 	 Adding directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/lib to tarball
+DEBUG 2017-11-23 14:22:10,427: 	 Checking directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/biglib
+DEBUG 2017-11-23 14:22:10,427: 	 Adding directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/biglib to tarball
+DEBUG 2017-11-23 14:22:10,428: 	 Checking directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/module
+DEBUG 2017-11-23 14:22:10,907: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/CalibCode/CalibTools/interface to tarball
+DEBUG 2017-11-23 14:22:10,955: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/CalibCode/EgammaObjects/interface to tarball
+DEBUG 2017-11-23 14:22:10,993: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/CalibCode/FillEpsilonPlot/data to tarball
+DEBUG 2017-11-23 14:22:11,802: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/CalibCode/FillEpsilonPlot/interface to tarball
+DEBUG 2017-11-23 14:22:11,829: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/CalibCode/FitEpsilonPlot/interface to tarball
+DEBUG 2017-11-23 14:22:11,845: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/CalibCode/GBRTrain/interface to tarball
+DEBUG 2017-11-23 14:22:12,923: 	 Adding data directory /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/ggAnalysis/ggNtuplizer/interface to tarball
+DEBUG 2017-11-23 14:22:13,125: 	 Uploading archive /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal/inputs/c4ced0f2-3d51-407d-9435-c2cae0c03c2bdefault.tgz (8.104492.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-11-23 14:22:15,225: 	 Loading required information from the environment
+DEBUG 2017-11-23 14:22:15,225: 	 Found CMSSW_9_3_0 for slc6_amd64_gcc630 with base /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0
+DEBUG 2017-11-23 14:22:15,225: 	 Making tarball in /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal/inputs/debugFiles.tgz
+DEBUG 2017-11-23 14:22:15,231: 	 Uploading archive /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-11-23 14:22:16,131: 	 Result uploading input files: 993c8d8a2bf182021025305fccb55933b6d5629c918d9322d82e813c8ecf89ba.tar.gz 
+WARNING 2017-11-23 14:22:16,131: 	 Warning: The following output files will not be published, as they are not EDM files: ['ntuple_woskim_MCecal.root']
+INFO 2017-11-23 14:22:16,131: 	 Sending the request to the server
+DEBUG 2017-11-23 14:22:16,131: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 0, 'savelogsflag': 1, 'useparent': 0, 'asyncdest': 'T2_CH_CERN', 'algoargs': 1000, 'cachefilename': '993c8d8a2bf182021025305fccb55933b6d5629c918d9322d82e813c8ecf89ba.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_9_3_0', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer17MiniAOD-92X_upgrade2017_realistic_Candidate_forECALStudies_ext1-v1/MINIAODSIM', 'lfn': '/store/user/psiddire/', 'dryrun': 0, 'workflow': 'crab_plots_Zee_cut_MCecal', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 0, 'tfileoutfiles': ['ntuple_woskim_MCecal.root'], 'oneEventMode': 0, 'debugfilename': 'cfe0ec71fd16c32dc59fafc2d5e02bfc4b2b11872e7f418e23feb9aa35e61de2.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc630', 'totalunits': 0, 'splitalgo': 'FileBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'Zee_ElectronPlots_cut_MCecal'} 
+DEBUG 2017-11-23 14:22:16,131: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=1&useparent=0&asyncdest=T2_CH_CERN&algoargs=1000&cachefilename=993c8d8a2bf182021025305fccb55933b6d5629c918d9322d82e813c8ecf89ba.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_9_3_0&primarydataset=&inputdata=%2FDYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8%2FRunIISummer17MiniAOD-92X_upgrade2017_realistic_Candidate_forECALStudies_ext1-v1%2FMINIAODSIM&lfn=%2Fstore%2Fuser%2Fpsiddire%2F&dryrun=0&workflow=crab_plots_Zee_cut_MCecal&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=0&oneEventMode=0&debugfilename=cfe0ec71fd16c32dc59fafc2d5e02bfc4b2b11872e7f418e23feb9aa35e61de2.tar.gz&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc630&totalunits=0&splitalgo=FileBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=Zee_ElectronPlots_cut_MCecal&tfileoutfiles=ntuple_woskim_MCecal.root
+DEBUG 2017-11-23 14:22:17,398: 	 Result: {u'result': [{u'RequestName': u'171123_132217:psiddire_crab_plots_Zee_cut_MCecal'}]}
+INFO 2017-11-23 14:22:17,401: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2017-11-23 14:22:17,401: 	 Task name: 171123_132217:psiddire_crab_plots_Zee_cut_MCecal
+INFO 2017-11-23 14:22:17,401: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2017-11-23 14:22:17,401: 	 About to return
+INFO 2017-11-23 14:22:17,404: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal/crab.log
+DEBUG 2017-11-23 14:25:23,708: 	 Executing command: 'status'
+DEBUG 2017-11-23 14:25:23,708: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2017-11-23 14:25:23,726: 	 Checking credentials
+DEBUG 2017-11-23 14:25:23,727: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-11-23 14:25:23,727: 	 Getting proxy life time left
+DEBUG 2017-11-23 14:25:24,368: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 83192
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:25:24,981: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 83192
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:25:24,981: 	 Proxy valid for 23:06:32 hours
+DEBUG 2017-11-23 14:25:25,095: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:25:25,095: 	 Checking credentials
+DEBUG 2017-11-23 14:25:25,095: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-11-23 14:25:25,095: 	 Getting proxy life time left
+DEBUG 2017-11-23 14:25:25,602: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 83191
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:25:26,223: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 83190
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:25:26,223: 	 Proxy valid for 23:06:31 hours
+DEBUG 2017-11-23 14:25:27,141: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-11-23 14:25:27,425: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:25:27,425: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-11-23 14:25:27,425: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2017-11-23 14:25:27,730: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 507:43:31  (21.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 14:25:27,731: 	 Myproxy is valid: 1827811
+DEBUG 2017-11-23 14:25:27,731: 	 Command use: status
+DEBUG 2017-11-23 14:25:27,731: 	 Options use: ['-d', 'crab_projects/crab_plots_Zee_cut_MCecal/']
+DEBUG 2017-11-23 14:25:28,636: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-11-23 14:25:28,636: 	 Instance is prod
+DEBUG 2017-11-23 14:25:28,636: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-11-23 14:25:28,636: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-11-23 14:25:29,535: 	 Got information from server oracle database: {u'result': [u'171123_132217:psiddire_crab_plots_Zee_cut_MCecal', u'None', u'SUBMITTED', u'2017-11-23 13:22:17.390333', u'None', u'2017-11-23 13:22:54.973702', u'None', u'CMSSW_9_3_0', u'slc6_amd64_gcc630', u'/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer17MiniAOD-92X_upgrade2017_realistic_Candidate_forECALStudies_ext1-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1000, 'runs': [], 'lumis': []}", u'0', u'993c8d8a2bf182021025305fccb55933b6d5629c918d9322d82e813c8ecf89ba.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'psiddire', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy', u'cms', u'None', u'None', u'Zee_ElectronPlots_cut_MCecal-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0194.cern.ch/mon/cms1092/171123_132217:psiddire_crab_plots_Zee_cut_MCecal', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['ntuple_woskim_MCecal.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0194.cern.ch', u'F', u'[]', u'T', u'/store/user/psiddire/', u'F', u'None', u'F', u'F', u'F', u'None', u'DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8', u'filetransfers', u'SUBMIT', u'14175436', u'cfe0ec71fd16c32dc59fafc2d5e02bfc4b2b11872e7f418e23feb9aa35e61de2.tar.gz', u'188.184.94.243', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-11-23 14:25:29,536: 	 CRAB project directory:		/afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal
+INFO 2017-11-23 14:25:29,536: 	 Task name:			171123_132217:psiddire_crab_plots_Zee_cut_MCecal
+INFO 2017-11-23 14:25:29,536: 	 Grid scheduler:			crab3@vocms0194.cern.ch
+INFO 2017-11-23 14:25:29,536: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-11-23 14:25:29,536: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171123_132217%3Apsiddire_crab_plots_Zee_cut_MCecal
+INFO 2017-11-23 14:25:29,536: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=psiddire&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171123_132217%3Apsiddire_crab_plots_Zee_cut_MCecal
+DEBUG 2017-11-23 14:25:29,536: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 14175436)
+DEBUG 2017-11-23 14:25:29,537: 	 Webdir is located at http://vocms0194.cern.ch/mon/cms1092/171123_132217:psiddire_crab_plots_Zee_cut_MCecal
+DEBUG 2017-11-23 14:25:30,513: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0194/cms1092/171123_132217:psiddire_crab_plots_Zee_cut_MCecal
+DEBUG 2017-11-23 14:25:30,513: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0194/cms1092/171123_132217:psiddire_crab_plots_Zee_cut_MCecal/status_cache
+DEBUG 2017-11-23 14:25:31,419: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [0], 'StartTimes': [], 'SubmitTimes': [1511443385.0], 'JobIds': ['14175442.0'], 'EndTimes': [], 'Restarts': 0, 'RecordedSite': False, 'State': 'idle', 'ResidentSetSize': [0], 'TotalUserCpuTimeHistory': [0], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [0]}}
+INFO 2017-11-23 14:25:31,420: 	 Status on the scheduler:	SUBMITTED
+INFO 2017-11-23 14:25:31,420: 	 
+Jobs status:                    idle          100.0% (1/1)
+INFO 2017-11-23 14:25:31,420: 	 
+No publication information available yet
+INFO 2017-11-23 14:25:31,444: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal/crab.log
+DEBUG 2017-11-23 17:41:10,689: 	 Executing command: 'getoutput'
+DEBUG 2017-11-23 17:41:10,690: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2017-11-23 17:41:10,712: 	 Checking credentials
+DEBUG 2017-11-23 17:41:10,713: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-11-23 17:41:10,713: 	 Getting proxy life time left
+DEBUG 2017-11-23 17:41:11,920: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 71445
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:12,426: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 71444
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:12,426: 	 Proxy valid for 19:50:45 hours
+DEBUG 2017-11-23 17:41:12,434: 	 Using VO group '' and VO role 'NULL' as written in the request cache file for this task.
+DEBUG 2017-11-23 17:41:12,550: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:12,551: 	 Checking credentials
+DEBUG 2017-11-23 17:41:12,551: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-11-23 17:41:12,551: 	 Getting proxy life time left
+DEBUG 2017-11-23 17:41:13,057: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 71444
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:13,563: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 71443
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:13,564: 	 Proxy valid for 19:50:44 hours
+DEBUG 2017-11-23 17:41:14,067: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u93494 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:15,083: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-11-23 17:41:15,190: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:15,191: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-11-23 17:41:15,191: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2017-11-23 17:41:15,494: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 504:27:43  (21.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:15,495: 	 Myproxy is valid: 1816063
+DEBUG 2017-11-23 17:41:15,495: 	 Command use: getoutput
+DEBUG 2017-11-23 17:41:15,495: 	 Options use: ['-d', 'crab_projects/crab_plots_Zee_cut_MCecal/']
+DEBUG 2017-11-23 17:41:16,496: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-11-23 17:41:16,496: 	 Instance is prod
+DEBUG 2017-11-23 17:41:16,496: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-11-23 17:41:16,496: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-11-23 17:41:16,496: 	 Executing command: 'status'
+DEBUG 2017-11-23 17:41:16,496: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2017-11-23 17:41:16,502: 	 Checking credentials
+DEBUG 2017-11-23 17:41:16,503: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-11-23 17:41:16,503: 	 Getting proxy life time left
+DEBUG 2017-11-23 17:41:17,008: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 71440
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:17,514: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 71439
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:17,514: 	 Proxy valid for 19:50:40 hours
+DEBUG 2017-11-23 17:41:17,703: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:17,704: 	 Checking credentials
+DEBUG 2017-11-23 17:41:17,704: 	 Found proxy file /tmp/x509up_u93494
+DEBUG 2017-11-23 17:41:17,704: 	 Getting proxy life time left
+DEBUG 2017-11-23 17:41:18,209: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -timeleft
+ output : 71438
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:18,814: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u93494 -actimeleft
+ output : 71438
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:18,814: 	 Proxy valid for 19:50:38 hours
+DEBUG 2017-11-23 17:41:19,742: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-11-23 17:41:19,849: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:19,849: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-11-23 17:41:19,849: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy_cmsweb.cern.ch for credential name
+DEBUG 2017-11-23 17:41:19,952: 	 Executing : 
+ command : myproxy-info -l 2cc438145781cdc76c15e29c414b48513ed3e5e7 -s myproxy.cern.ch
+ output : username: 2cc438145781cdc76c15e29c414b48513ed3e5e7
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 504:27:39  (21.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-11-23 17:41:19,953: 	 Myproxy is valid: 1816059
+DEBUG 2017-11-23 17:41:19,953: 	 Command use: status
+DEBUG 2017-11-23 17:41:19,953: 	 Options use: []
+DEBUG 2017-11-23 17:41:20,861: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-11-23 17:41:20,861: 	 Instance is prod
+DEBUG 2017-11-23 17:41:20,861: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-11-23 17:41:20,861: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-11-23 17:41:21,824: 	 Got information from server oracle database: {u'result': [u'171123_132217:psiddire_crab_plots_Zee_cut_MCecal', u'None', u'SUBMITTED', u'2017-11-23 13:22:17.390333', u'None', u'2017-11-23 13:22:54.973702', u'None', u'CMSSW_9_3_0', u'slc6_amd64_gcc630', u'/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer17MiniAOD-92X_upgrade2017_realistic_Candidate_forECALStudies_ext1-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1000, 'runs': [], 'lumis': []}", u'0', u'993c8d8a2bf182021025305fccb55933b6d5629c918d9322d82e813c8ecf89ba.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'psiddire', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy', u'cms', u'None', u'None', u'Zee_ElectronPlots_cut_MCecal-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0194.cern.ch/mon/cms1092/171123_132217:psiddire_crab_plots_Zee_cut_MCecal', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['ntuple_woskim_MCecal.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0194.cern.ch', u'F', u'[]', u'T', u'/store/user/psiddire/', u'F', u'None', u'F', u'F', u'F', u'None', u'DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8', u'filetransfers', u'SUBMIT', u'14175436', u'cfe0ec71fd16c32dc59fafc2d5e02bfc4b2b11872e7f418e23feb9aa35e61de2.tar.gz', u'188.184.94.243', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+INFO 2017-11-23 17:41:21,824: 	 CRAB project directory:		/afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal
+INFO 2017-11-23 17:41:21,825: 	 Task name:			171123_132217:psiddire_crab_plots_Zee_cut_MCecal
+INFO 2017-11-23 17:41:21,825: 	 Grid scheduler:			crab3@vocms0194.cern.ch
+INFO 2017-11-23 17:41:21,825: 	 Status on the CRAB server:	SUBMITTED
+INFO 2017-11-23 17:41:21,825: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/171123_132217%3Apsiddire_crab_plots_Zee_cut_MCecal
+INFO 2017-11-23 17:41:21,825: 	 Dashboard monitoring URL:	http://dashb-cms-job.cern.ch/dashboard/templates/task-analysis/#user=psiddire&refresh=0&table=Jobs&p=1&records=25&activemenu=2&status=&site=&tid=171123_132217%3Apsiddire_crab_plots_Zee_cut_MCecal
+DEBUG 2017-11-23 17:41:21,825: 	 The CRAB server submitted your task to the Grid scheduler (cluster ID: 14175436)
+DEBUG 2017-11-23 17:41:21,825: 	 Webdir is located at http://vocms0194.cern.ch/mon/cms1092/171123_132217:psiddire_crab_plots_Zee_cut_MCecal
+DEBUG 2017-11-23 17:41:22,828: 	 Proxied webdir is located at https://cmsweb.cern.ch/scheddmon/0194/cms1092/171123_132217:psiddire_crab_plots_Zee_cut_MCecal
+DEBUG 2017-11-23 17:41:22,828: 	 Retrieving 'status_cache' file from https://cmsweb.cern.ch/scheddmon/0194/cms1092/171123_132217:psiddire_crab_plots_Zee_cut_MCecal/status_cache
+DEBUG 2017-11-23 17:41:23,746: 	 Got information from status cache file: {'1': {'Retries': 0, 'WallDurations': [3034.0], 'StartTimes': [1511443488.0], 'SubmitTimes': [1511443385.0], 'JobIds': ['14175442.0'], 'EndTimes': [1511446522.0], 'Restarts': 0, 'RecordedSite': False, 'State': 'finished', 'ResidentSetSize': [655980], 'TotalUserCpuTimeHistory': [2351], 'SiteHistory': ['Unknown'], 'TotalSysCpuTimeHistory': [284]}}
+INFO 2017-11-23 17:41:23,746: 	 Status on the scheduler:	COMPLETED
+INFO 2017-11-23 17:41:23,746: 	 
+Jobs status:                    finished      100.0% (1/1)
+INFO 2017-11-23 17:41:24,701: 	 
+No publication information available yet
+DEBUG 2017-11-23 17:41:26,178: 	 Server result: {u'result': [u'171123_132217:psiddire_crab_plots_Zee_cut_MCecal', u'None', u'SUBMITTED', u'2017-11-23 13:22:17.390333', u'None', u'2017-11-23 13:22:54.973702', u'None', u'CMSSW_9_3_0', u'slc6_amd64_gcc630', u'/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer17MiniAOD-92X_upgrade2017_realistic_Candidate_forECALStudies_ext1-v1/MINIAODSIM', u'[]', u'[]', u'FileBased', u"{'splitOnRun': False, 'halt_job_on_file_boundaries': False, 'files_per_job': 1000, 'runs': [], 'lumis': []}", u'0', u'993c8d8a2bf182021025305fccb55933b6d5629c918d9322d82e813c8ecf89ba.tar.gz', u'https://cmsweb.cern.ch/crabcache', u'psiddire', u'/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=psiddire/CN=790979/CN=Prasanna Kumar Siddireddy', u'cms', u'None', u'None', u'Zee_ElectronPlots_cut_MCecal-00000000000000000000000000000000', u'T2_CH_CERN', u'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', u'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', u'T', u'Analysis', u'{}', u'[]', u'T', u'vocms052', u'[]', u'1250', u'1', u'2000', u'10', u'None', u'http://vocms0194.cern.ch/mon/cms1092/171123_132217:psiddire_crab_plots_Zee_cut_MCecal', u'None', u'None', u'[]', u'[]', u'[]', u'pythia', u'[]', u"['ntuple_woskim_MCecal.root']", u'[]', u'https://cmsweb.cern.ch/crabserver/prod', u'None', u'0', u'cmsgwms-collector-global.cern.ch:9620,cmssrv221.fnal.gov:9620', u'crab3@vocms0194.cern.ch', u'F', u'[]', u'T', u'/store/user/psiddire/', u'F', u'None', u'F', u'F', u'F', u'None', u'DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8', u'filetransfers', u'SUBMIT', u'14175436', u'cfe0ec71fd16c32dc59fafc2d5e02bfc4b2b11872e7f418e23feb9aa35e61de2.tar.gz', u'188.184.94.243', u'F', u'None'], u'desc': {u'columns': [u'tm_taskname', u'panda_jobset_id', u'tm_task_status', u'tm_start_time', u'tm_start_injection', u'tm_end_injection', u'tm_task_failure', u'tm_job_sw', u'tm_job_arch', u'tm_input_dataset', u'tm_site_whitelist', u'tm_site_blacklist', u'tm_split_algo', u'tm_split_args', u'tm_totalunits', u'tm_user_sandbox', u'tm_cache_url', u'tm_username', u'tm_user_dn', u'tm_user_vo', u'tm_user_role', u'tm_user_group', u'tm_publish_name', u'tm_asyncdest', u'tm_dbs_url', u'tm_publish_dbs_url', u'tm_publication', u'tm_job_type', u'tm_arguments', u'panda_resubmitted_jobs', u'tm_save_logs', u'tw_name', u'tm_user_infiles', u'tm_maxjobruntime', u'tm_numcores', u'tm_maxmemory', u'tm_priority', u'tm_output_dataset', u'tm_user_webdir', u'tm_activity', u'tm_scriptexe', u'tm_scriptargs', u'tm_extrajdl', u'tm_task_warnings', u'tm_generator', u'tm_outfiles', u'tm_tfile_outfiles', u'tm_edm_outfiles', u'tm_asourl', u'tm_events_per_lumi', u'tm_use_parent', u'tm_collector', u'tm_schedd', u'tm_dry_run', u'tm_user_files', u'tm_transfer_outputs', u'tm_output_lfn', u'tm_ignore_locality', u'tm_fail_limit', u'tm_one_event_mode', u'tm_publish_groupname', u'tm_nonvalid_input_dataset', u'tm_secondary_input_dataset', u'tm_primary_dataset', u'tm_asodb', u'tm_task_command', u'clusterid', u'tm_debug_files', u'tm_submitter_ip_addr', u'tm_ignore_global_blacklist', u'tm_last_publication']}}
+DEBUG 2017-11-23 17:41:26,178: 	 Retrieving locations for task 171123_132217:psiddire_crab_plots_Zee_cut_MCecal
+DEBUG 2017-11-23 17:41:26,178: 	 Retrieving all file locations
+DEBUG 2017-11-23 17:41:26,178: 	 Retrieving jobs [('jobids', '1')]
+DEBUG 2017-11-23 17:41:27,110: 	 Server result: {u'result': [{u'tmpsite': u'T2_ES_CIEMAT', u'checksum': {u'adler32': u'79b65fdc', u'cksum': 220313630, u'md5': u'79b65fdc'}, u'lfn': u'/store/user/psiddire/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Zee_ElectronPlots_cut_MCecal/171123_132217/0000/ntuple_woskim_MCecal_1.root', u'site': u'T2_CH_CERN', u'jobid': u'1', u'tmplfn': u'/store/user/psiddire/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Zee_ElectronPlots_cut_MCecal/171123_132217/0000/ntuple_woskim_MCecal_1.root', u'size': 8500, u'directstageout': u'F'}]}
+DEBUG 2017-11-23 17:41:27,111: 	 Service initialised ({'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'key': '/tmp/x509up_u93494', 'maxcachereuse': 24.0, 'cachepath': '/tmp/psiddire/.wmcore_cache_dxZcC6/cmsweb.cern.ch', 'inputdata': {}, 'cert': '/tmp/x509up_u93494', 'timeout': 300, 'service_name': 'PhEDEx', 'requests': {'content_type': 'application/x-www-form-urlencoded', 'cacheduration': 0, 'host': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'accept_type': 'text/html', 'key': '/tmp/x509up_u93494', 'deleteCacheOnExit': <WMCore.Services.Requests.TempDirectory object at 0x7f2aa6743f10>, 'endpoint_components': ParseResult(scheme='https', netloc='cmsweb.cern.ch', path='/phedex/datasvc/json/prod/', params='', query='', fragment=''), 'endpoint': 'https://cmsweb.cern.ch/phedex/datasvc/json/prod/', 'pycurl': True, 'cachepath': '/tmp/psiddire/.wmcore_cache_dxZcC6/cmsweb.cern.ch', 'cert': '/tmp/x509up_u93494', 'timeout': 300, 'req_cache_path': '/tmp/psiddire/.wmcore_cache_dxZcC6/cmsweb.cern.ch/.cache', 'logger': <logging.Logger object at 0x7f2aa6722550>}, 'logger': <logging.Logger object at 0x7f2aa6722550>, 'cacheduration': 0, 'method': None, 'pycurl': True}):
+	 host: cmsweb.cern.ch, basepath: https://cmsweb.cern.ch/phedex/datasvc/json/prod/ (text/html)
+	 cache: /tmp/psiddire/.wmcore_cache_dxZcC6/cmsweb.cern.ch (duration 0 hours, max reuse 24.0 hours)
+DEBUG 2017-11-23 17:41:27,111: 	 getData: 
+	url: lfn2pfn
+	data: {'node': u'T2_CH_CERN', 'custodial': 'n', 'lfn': u'/store/user/psiddire/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Zee_ElectronPlots_cut_MCecal/171123_132217/0000/ntuple_woskim_MCecal_1.root', 'protocol': 'srmv2'}
+INFO 2017-11-23 17:41:28,048: 	 Setting the destination to /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal/results 
+INFO 2017-11-23 17:41:28,048: 	 Retrieving 1 files
+DEBUG 2017-11-23 17:41:28,048: 	 Executing command: 'remote_copy'
+DEBUG 2017-11-23 17:41:28,048: 	 Found CRAB cache file /afs/cern.ch/user/p/psiddire/.crab3
+DEBUG 2017-11-23 17:41:28,108: 	 Skipping proxy creation
+DEBUG 2017-11-23 17:41:28,108: 	 Command use: remote_copy
+DEBUG 2017-11-23 17:41:28,108: 	 Options use: ['--destination', '/afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal/results', '--input', [{u'tmpsite': u'T2_ES_CIEMAT', u'checksum': {u'adler32': u'79b65fdc', u'cksum': 220313630, u'md5': u'79b65fdc'}, u'lfn': u'/store/user/psiddire/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Zee_ElectronPlots_cut_MCecal/171123_132217/0000/ntuple_woskim_MCecal_1.root', u'site': u'T2_CH_CERN', u'jobid': u'1', 'pfn': u'gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Zee_ElectronPlots_cut_MCecal/171123_132217/0000/ntuple_woskim_MCecal_1.root', u'tmplfn': u'/store/user/psiddire/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Zee_ElectronPlots_cut_MCecal/171123_132217/0000/ntuple_woskim_MCecal_1.root', u'size': 8500, u'directstageout': u'F'}], '--dir', 'crab_projects/crab_plots_Zee_cut_MCecal/', '--proxy', '/tmp/x509up_u93494', '--parallel', None, '--wait', None, '--checksum', 'ADLER32', '--command', None]
+DEBUG 2017-11-23 17:41:29,010: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-11-23 17:41:29,010: 	 Instance is prod
+DEBUG 2017-11-23 17:41:29,010: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-11-23 17:41:29,010: 	 Command url /crabserver/prod/workflow
+INFO 2017-11-23 17:41:29,027: 	 Will use `gfal-copy` command for file transfers
+DEBUG 2017-11-23 17:41:29,116: 	 Starting ChildProcess with 10 ChildProcess
+INFO 2017-11-23 17:41:29,135: 	 Placing file 'ntuple_woskim_MCecal_1.root' in retrieval queue 
+INFO 2017-11-23 17:41:29,136: 	 Please wait
+DEBUG 2017-11-23 17:41:29,136: 	 stopchildproc() method has been called
+DEBUG 2017-11-23 17:41:30,635: 	 The output of the transfer subprocesses follows:
+DEBUG 2017-11-23 17:41:30,635: 	 	INFO 2017-11-23 17:41:29,137: 	 Retrieving ntuple_woskim_MCecal_1.root 
+DEBUG 2017-11-23 17:41:30,635: 	 	DEBUG 2017-11-23 17:41:29,137: 	 Executing env -i X509_USER_PROXY=/tmp/x509up_u93494 gfal-copy -v -K ADLER32  -T 1800  -t 60  gsiftp://eoscmsftp.cern.ch//eos/cms/store/user/psiddire/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/Zee_ElectronPlots_cut_MCecal/171123_132217/0000/ntuple_woskim_MCecal_1.root file:///afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal/results/ntuple_woskim_MCecal_1.root
+DEBUG 2017-11-23 17:41:30,635: 	 	DEBUG 2017-11-23 17:41:30,630: 	 Finish executing for file ntuple_woskim_MCecal_1.root
+DEBUG 2017-11-23 17:41:30,635: 	 	INFO 2017-11-23 17:41:30,631: 	 Success: Success in retrieving ntuple_woskim_MCecal_1.root 
+INFO 2017-11-23 17:41:30,689: 	 Success: All files successfully retrieved
+INFO 2017-11-23 17:41:30,764: 	 Log file is /afs/cern.ch/user/p/psiddire/CMSSW_9_3_0/src/Demo/DemoAnalyzer/test/crab_projects/crab_plots_Zee_cut_MCecal/crab.log
