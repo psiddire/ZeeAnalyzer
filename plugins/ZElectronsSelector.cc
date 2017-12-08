@@ -67,7 +67,7 @@ public:
   vector<double> dPhiInCut       ;
   vector<double> hOverECut       ;
   vector<double> relCombIso      ;
-
+  vector<double> EInvMinusPInv   ;
 
 };
 
@@ -114,7 +114,7 @@ ZElectronsSelector::ZElectronsSelector(const edm::ParameterSet& cfg, edm::Consum
   dPhiInCut       = eleIDWP.getParameter<std::vector<double> >("dPhiInCut");
   hOverECut       = eleIDWP.getParameter<std::vector<double> >("hOverECut");
   relCombIso      = eleIDWP.getParameter<std::vector<double> >("relCombIsolationWithEALowPtCut");
-
+  EInvMinusPInv   = eleIDWP.getParameter<std::vector<double> >("EInvMinusPInv");
 }
 
 
