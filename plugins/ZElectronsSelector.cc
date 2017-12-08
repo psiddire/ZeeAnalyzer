@@ -132,12 +132,17 @@ bool ZElectronsSelector::operator()(const reco::GsfElectron& el) const{
 
   auto etrack  = el.gsfTrack().get(); 
 
+  const float ecal_energy_inverse = 1.0/el.ecalEnergy();
+  const float eSCoverP = el.eSuperClusterOverP();
+  float EInverseMinusPInverse = std::abs(1.0 - eSCoverP)*ecal_energy_inverse;
+
   if (el.isEB()){
     if (etrack->hitPattern().numberOfLostHits(reco::HitPattern::MISSING_INNER_HITS)>missHits[0]) return keepEle; 
     if (el.full5x5_sigmaIetaIeta() >  sigmaIEtaIEtaCut[0]) return keepEle; 
     if (fabs(el.deltaPhiSuperClusterTrackAtVtx())> dPhiInCut[0]) return keepEle; 
-    if (fabs(el.deltaEtaSuperClusterTrackAtVtx())> dEtaInSeedCut[0]) return keepEle; 
+    if (fabs(el.deltaEtaSeedClusterTrackAtVtx())> dEtaInSeedCut[0]) return keepEle; 
     if (el.hadronicOverEm()>hOverECut[0]) return keepEle;
+    if (EInverseMinusPInverse > EInvMinusPInv[0]) return keepEle;
     float abseta = fabs((el.superCluster().get())->position().eta());
     if (abseta> 1.479) return keepEle; // check if it is really needed
     const float  eA = getEffectiveArea( abseta );
@@ -154,6 +159,7 @@ bool ZElectronsSelector::operator()(const reco::GsfElectron& el) const{
     if (fabs(el.deltaPhiSuperClusterTrackAtVtx())> dPhiInCut[1]) return keepEle; 
     if (fabs(el.deltaEtaSuperClusterTrackAtVtx())> dEtaInSeedCut[1]) return keepEle; 
     if (el.hadronicOverEm()>hOverECut[1]) return keepEle;
+    if (EInverseMinusPInverse > EInvMinusPInv[1]) return keepEle;
     float abseta = fabs((el.superCluster())->position().eta());
     if (abseta< 1.479) return keepEle; // check if it is really needed
     if (abseta>=2.5  ) return keepEle; // check if it is really needed

@@ -154,7 +154,7 @@ void ElectronPlots::analyze(const edm::Event& iEvent, const edm::EventSetup& iSe
 	TLorentzVector pfz;
 	pfz.SetPxPyPzE(el1->px()+el2->px(),el1->py()+el2->py(),el1->pz()+el2->pz(),el1->energy()+el2->energy());
         
-	if( pfz.M() < 70 or pfz.M() > 110 ) continue;
+	if( pfz.M() < 40 or pfz.M() > 140 ) continue;
 	if ( el1->pt() < 20 or el2->pt() < 10 ) continue;
 	
 	if ( matchToTruth( el1, genParticles)!=1 or matchToTruth( el2, genParticles)!=1) continue;
