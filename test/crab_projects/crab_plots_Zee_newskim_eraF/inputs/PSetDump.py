@@ -21,17 +21,18 @@ process.HFRecalParameterBlock = cms.PSet(
 )
 
 process.eleIDWP = cms.PSet(
+    EInverseMinusPInverseCut = cms.vdouble(0.299, 0.15),
     dEtaInSeedCut = cms.vdouble(0.00749, 0.00895),
     dPhiInCut = cms.vdouble(0.228, 0.213),
     full5x5_sigmaIEtaIEtaCut = cms.vdouble(0.0115, 0.037),
     hOverECut = cms.vdouble(0.356, 0.211),
     missingHitsCut = cms.vint32(2, 3),
-    relCombIsolationWithEALowPtCut = cms.vdouble(0.175, 0.159)
+    relCombIsolationWithEACut = cms.vdouble(0.175, 0.159)
 )
 
 process.diZeeElectrons = cms.EDProducer("CandViewShallowCloneCombiner",
     checkCharge = cms.bool(False),
-    cut = cms.string('mass > 70 && mass < 110 && daughter(0).pt>20 && daughter(1).pt()>10'),
+    cut = cms.string('mass > 40 && mass < 140 && daughter(0).pt>20 && daughter(1).pt()>10'),
     decay = cms.string('identifiedElectrons identifiedElectrons')
 )
 
@@ -56,12 +57,13 @@ process.identifiedElectrons = cms.EDFilter("ZElectronsSelectorAndSkim",
     effectiveAreaValues = cms.vdouble(0.1703, 0.1715, 0.1213, 0.123, 0.1635, 
         0.1937, 0.2393),
     eleID = cms.PSet(
+        EInverseMinusPInverseCut = cms.vdouble(0.299, 0.15),
         dEtaInSeedCut = cms.vdouble(0.00749, 0.00895),
         dPhiInCut = cms.vdouble(0.228, 0.213),
         full5x5_sigmaIEtaIEtaCut = cms.vdouble(0.0115, 0.037),
         hOverECut = cms.vdouble(0.356, 0.211),
         missingHitsCut = cms.vint32(2, 3),
-        relCombIsolationWithEALowPtCut = cms.vdouble(0.175, 0.159)
+        relCombIsolationWithEACut = cms.vdouble(0.175, 0.159)
     ),
     rho = cms.InputTag("fixedGridRhoFastjetCentralCalo"),
     src = cms.InputTag("goodZeeElectrons")
@@ -502,7 +504,7 @@ process.GlobalTag = cms.ESSource("PoolDBESSource",
     RefreshEachRun = cms.untracked.bool(False),
     RefreshOpenIOVs = cms.untracked.bool(False),
     connect = cms.string('frontier://FrontierProd/CMS_CONDITIONS'),
-    globaltag = cms.string('92X_upgrade2017_realistic_Candidate_forECALStudies'),
+    globaltag = cms.string('92X_dataRun2_Prompt_v11'),
     pfnPostfix = cms.untracked.string(''),
     pfnPrefix = cms.untracked.string(''),
     snapshotTime = cms.string(''),

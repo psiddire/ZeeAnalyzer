@@ -23,9 +23,9 @@ eleIDWP = cms.PSet( #first for barrel, second for endcap. All values from cutBas
     dEtaInSeedCut                  = cms.vdouble(0.00749,0.00895)  , # dEtaInSeedCut
     dPhiInCut                      = cms.vdouble(0.228  ,0.213  )  , # dPhiInCut
     hOverECut                      = cms.vdouble(0.356  ,0.211  )  , # hOverECut
-    relCombIsolationWithEALowPtCut = cms.vdouble(0.175  ,0.159  )  , # relCombIsolationWithEALowPtCut
-    missingHitsCut                 = cms.vint32(2       ,3      )  , # missingHitsCut
-    EInvMinusPInv                  = cms.vdouble(0.299  ,0.15   )    # EInvMinusPInvcut
+    relCombIsolationWithEACut = cms.vdouble(0.175  ,0.159  )  , # relCombIsolationWithEALowPtCut
+    EInverseMinusPInverseCut       = cms.vdouble(0.299  ,0.15   )  ,                
+    missingHitsCut                 = cms.vint32(2       ,3      )    # missingHitsCut
 ) 
 
 
@@ -50,7 +50,5 @@ diZeeElectronsFilter = cms.EDFilter("CandViewCountFilter",
                                     minNumber = cms.uint32(1)
                                     )
 
-
 #sequences
 zdiElectronSequence = cms.Sequence(goodZeeElectrons*identifiedElectrons*diZeeElectrons* diZeeElectronsFilter )
-

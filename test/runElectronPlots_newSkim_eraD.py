@@ -8,17 +8,10 @@ process.load("Configuration.StandardSequences.GeometryRecoDB_cff")
 
 from Configuration.AlCa.GlobalTag import GlobalTag
 process.load("Configuration.StandardSequences.FrontierConditions_GlobalTag_condDBv2_cff")
-process.GlobalTag = GlobalTag(process.GlobalTag, '92X_upgrade2017_realistic_Candidate_forECALStudies', '')
+process.GlobalTag = GlobalTag(process.GlobalTag, '92X_dataRun2_Prompt_v11', '')
 
-inputFilesData = cms.untracked.vstring(
-'/store/data/Run2017D/DoubleEG/MINIAOD/PromptReco-v1/000/302/031/00000/008329E5-368F-E711-A1CD-02163E01A21D.root',
-)
-
-inputFiles = inputFilesData
 outputFile = "ntuple_newskim_eraD.root"
 process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring())
-#process.source = cms.Source ("PoolSource", fileNames = inputFiles ) 
-#process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(1000) ) 
 
 process.ntupler = cms.EDAnalyzer(
     'ElectronPlots',

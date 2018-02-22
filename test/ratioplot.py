@@ -15,9 +15,9 @@ ROOT.gStyle.SetOptStat(0)
 #filewoskim = "crab_projects/crab_plots_Zee_cut_MCv10ext1v1/results/ntuple_woskim_MCv10ext1v1.root"
 #fileskim = "crab_projects/crab_plots_Zee_skimcut_MCv10ext1v1/results/ntuple_skim_MCv10ext1v1.root"
 
-filepath = "plots/oldskim/"
-filewoskim = "crab_projects/crab_plots_Zee_woskim/results/ntuple_woskim_eraB.root"
-fileskim = "crab_projects/crab_plots_Zee/results/ntuple_skim_eraB.root"
+filepath = "plots/newnewskim/"
+filewoskim = "crab_projects/crab_plots_Zee_woskim_eraF/results/ntuple_woskim_eraF.root"
+fileskim = "crab_projects/crab_plots_Zee_newnewskim_eraF/results/ntuple_newnewskim_eraF.root"
 
 #filepath = "plots/eraCv2/"
 #filewoskim = "crab_projects/crab_plots_Zee_woskim_eraCv2/results/ntuple_woskim_eraCv2.root"

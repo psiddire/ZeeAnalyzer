@@ -8,7 +8,7 @@ process.load("Configuration.StandardSequences.GeometryRecoDB_cff")
 
 from Configuration.AlCa.GlobalTag import GlobalTag
 process.load("Configuration.StandardSequences.FrontierConditions_GlobalTag_condDBv2_cff")
-process.GlobalTag = GlobalTag(process.GlobalTag, '92X_upgrade2017_realistic_Candidate_forECALStudies', '')
+process.GlobalTag = GlobalTag(process.GlobalTag, '92X_dataRun2_Prompt_v11', '')
 
 # input
 #process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(10000) )
@@ -22,17 +22,10 @@ inputFilesData = cms.untracked.vstring(
 '/store/data/Run2017D/DoubleEG/MINIAOD/PromptReco-v1/000/302/031/00000/6496C386-518F-E711-B09E-02163E01341D.root'
 )
 
-#/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer17MiniAOD-92X_upgrade2017_realistic_v7-v1/MINIAODSIM
-#/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer17MiniAOD-92X_upgrade2017_realistic_v10_ext1-v2/MINIAODSIM
-#/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/RunIISummer17MiniAOD-92X_upgrade2017_realistic_v10_ext1-v1/MINIAODSIM
-
-#inputFilesMC = cms.untracked.vstring(
-#'/store/mc/RunIISummer17MiniAOD/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/MINIAODSIM/92X_upgrade2017_realistic_v7-v1/110000/2057EC95-8975-E711-8966-0CC47A7C3444.root'
-#)
 
 inputFiles = inputFilesData
 outputFile = "ntuple_skim_eraD.root"
-#process.source = cms.Source ("PoolSource", fileNames = inputFiles )                             
+
 process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring())
 
 process.ntupler = cms.EDAnalyzer(

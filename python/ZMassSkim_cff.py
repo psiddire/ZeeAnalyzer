@@ -17,6 +17,7 @@ if RUN_ON_MINIAOD:
                                     )
 else:
     goodZeeElectrons = cms.EDFilter("GsfElectronRefSelector",
+                                    #src = cms.InputTag("hltEgammaGsfElectrons"),
                                     src = cms.InputTag("gedGsfElectrons"),
                                     cut = cms.string(ELECTRON_CUT)
                                     )

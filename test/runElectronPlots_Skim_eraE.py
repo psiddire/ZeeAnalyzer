@@ -8,7 +8,7 @@ process.load("Configuration.StandardSequences.GeometryRecoDB_cff")
 
 from Configuration.AlCa.GlobalTag import GlobalTag
 process.load("Configuration.StandardSequences.FrontierConditions_GlobalTag_condDBv2_cff")
-process.GlobalTag = GlobalTag(process.GlobalTag, '92X_upgrade2017_realistic_Candidate_forECALStudies', '')
+process.GlobalTag = GlobalTag(process.GlobalTag, '92X_dataRun2_Prompt_v11', '')
 
 # input
 #process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(10000) )

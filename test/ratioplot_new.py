@@ -7,24 +7,24 @@ ROOT.gROOT.SetStyle("Plain")
 ROOT.gROOT.SetBatch(True)
 ROOT.gStyle.SetOptStat(0)
 
-'''
-filepath = "plots/newskim/"
-filewoskimB = "crab_projects/crab_plots_Zee_woskim/results/ntuple_woskim_eraB.root"
-fileskimB = "crab_projects/crab_plots_Zee_newskim/results/ntuple_newskim_eraB.root"
-filewoskimC = "crab_projects/crab_plots_Zee_woskim_eraCv1/results/ntuple_woskim_eraC.root"
-fileskimC = "crab_projects/crab_plots_Zee_newskim_eraCv1/results/ntuple_newskim_eraC.root"
-filewoskimD = "crab_projects/crab_plots_Zee_woskimcut_eraD/results/ntuple_woskim_eraD.root"
-fileskimD = "crab_projects/crab_plots_Zee_newskimcut_eraD/results/ntuple_newskim_eraD.root"
-filewoskimE = "crab_projects/crab_plots_Zee_woskim_eraE/results/ntuple_woskim_eraE.root"
-fileskimE = "crab_projects/crab_plots_Zee_newskim_eraE/results/ntuple_newskim_eraE.root"
-filewoskimF = "crab_projects/crab_plots_Zee_woskim_eraF/results/ntuple_woskim_eraF.root"
-fileskimF = "crab_projects/crab_plots_Zee_newskim_eraF/results/ntuple_newskim_eraF.root"
-filewoskimMC = "crab_projects/crab_plots_Zee_cut_MCv10ext1v2_withoutmatch/results/ntuple_woskim_MCv10ext1v2.root"
-fileskimMC = "crab_projects/crab_plots_Zee_newskimcut_MCv10ext1v2_withoutmatch/results/ntuple_newskim_MCv10ext1v2.root"
-filewoskimMCmatch = "crab_projects/crab_plots_Zee_cut_MCv10ext1v2/results/ntuple_woskim_MCv10ext1v2.root"
-fileskimMCmatch = "crab_projects/crab_plots_Zee_newskimcut_MCv10ext1v2/results/ntuple_newskim_MCv10ext1v2.root"
-'''
 #'''
+filepath = "plots/newskim_70140/"
+filewoskimB = "crab_projects/crab_plots_Zee_woskim_70140/results/ntuple_woskim_eraB_70140.root"
+fileskimB = "crab_projects/crab_plots_Zee_newskim_70140/results/ntuple_newskim_eraB_70140.root"
+filewoskimC = "crab_projects/crab_plots_Zee_woskim_eraCv1_70140/results/ntuple_woskim_eraC_70140.root"
+fileskimC = "crab_projects/crab_plots_Zee_newskim_eraCv1_70140/results/ntuple_newskim_eraC_70140.root"
+filewoskimD = "crab_projects/crab_plots_Zee_woskimcut_eraD_70140/results/ntuple_woskim_eraD_70140.root"
+fileskimD = "crab_projects/crab_plots_Zee_newskimcut_eraD_70140/results/ntuple_newskim_eraD_70140.root"
+filewoskimE = "crab_projects/crab_plots_Zee_woskim_eraE_70140/results/ntuple_woskim_eraE_70140.root"
+fileskimE = "crab_projects/crab_plots_Zee_newskim_eraE_70140/results/ntuple_newskim_eraE_70140.root"
+filewoskimF = "crab_projects/crab_plots_Zee_woskim_eraF_70140/results/ntuple_woskim_eraF_70140.root"
+fileskimF = "crab_projects/crab_plots_Zee_newskim_eraF_70140/results/ntuple_newskim_eraF_70140.root"
+filewoskimMC = "crab_projects/crab_plots_Zee_cut_MCv10ext1v2_withoutmatch_70140/results/ntuple_woskim_MCv10ext1v2_womatch_70140.root"
+fileskimMC = "crab_projects/crab_plots_Zee_newskimcut_MCv10ext1v2_withoutmatch_70140/results/ntuple_newskim_MCv10ext1v2_womatch_70140.root"
+filewoskimMCmatch = "crab_projects/crab_plots_Zee_cut_MCv10ext1v2_70140/results/ntuple_woskim_MCv10ext1v2_70140.root"
+fileskimMCmatch = "crab_projects/crab_plots_Zee_newskimcut_MCv10ext1v2_70140/results/ntuple_newskim_MCv10ext1v2_70140.root"
+#'''
+'''
 filepath = "plots/oldskim/"
 filewoskimB = "crab_projects/crab_plots_Zee_woskim/results/ntuple_woskim_eraB.root"
 fileskimB = "crab_projects/crab_plots_Zee/results/ntuple_skim_eraB.root"
@@ -40,7 +40,7 @@ filewoskimMC = "crab_projects/crab_plots_Zee_cut_MCv10ext1v2_withoutmatch/result
 fileskimMC = "crab_projects/crab_plots_Zee_skimcut_MCv10ext1v2_withoutmatch/results/ntuple_skim_MCv10ext1v2.root"
 filewoskimMCmatch = "crab_projects/crab_plots_Zee_cut_MCv10ext1v2/results/ntuple_woskim_MCv10ext1v2.root"
 fileskimMCmatch = "crab_projects/crab_plots_Zee_skimcut_MCv10ext1v2/results/ntuple_skim_MCv10ext1v2.root"
-#'''
+'''
 
 try:
     os.stat(filepath)

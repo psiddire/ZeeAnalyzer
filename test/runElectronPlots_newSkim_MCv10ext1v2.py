@@ -20,7 +20,7 @@ inputFilesMC = cms.untracked.vstring(
 '/store/mc/RunIISummer17MiniAOD/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/MINIAODSIM/92X_upgrade2017_realistic_v7-v1/110000/2057EC95-8975-E711-8966-0CC47A7C3444.root'
 )
 
-#inputFiles = inputFilesData
+#inputFiles = inputFilesMC
 outputFile = "ntuple_newskim_MCv10ext1v2.root"
 #process.source = cms.Source ("PoolSource", fileNames = inputFiles )                             
 #process.source.lumisToProcess = LumiList.LumiList(filename = 'eraB.json').getVLuminosityBlockRange()
@@ -41,6 +41,6 @@ process.TFileService = cms.Service("TFileService",
                                    fileName = cms.string( outputFile )
                                    )
 
-process.load("Demo/DemoAnalyzer/ZElectronsSelector_cfi") 
+process.load("Demo/DemoAnalyzer/ZElectronsSelector_new_cfi") 
 process.p = cms.Path(process.zdiElectronSequence*process.ntupler)
 

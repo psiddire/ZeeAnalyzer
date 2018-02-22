@@ -211,10 +211,10 @@ S'/store/user/psiddire/'
 p78
 sg25
 Nsg71
-S'eraF.txt'
+S'NewJson.txt'
 p79
 sg73
-S'305044-306126'
+S'305044-306460'
 p80
 sg69
 I01
@@ -263,7 +263,7 @@ S'prod'
 p95
 sS'RequestName'
 p96
-V171204_174458:psiddire_crab_plots_Zee_eraF
+V180216_154349:psiddire_crab_plots_Zee_eraF
 p97
 sS'voRole'
 p98

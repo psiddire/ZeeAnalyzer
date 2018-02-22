@@ -6,7 +6,7 @@ RUN_ON_MINIAOD = True
 
 # cuts
 ELECTRON_CUT=("pt > 10 && abs(eta)<2.5")
-DIELECTRON_CUT=("mass > 40 && mass < 140 && daughter(0).pt>20 && daughter(1).pt()>10")
+DIELECTRON_CUT=("mass > 40 && mass < 140 && daughter(0).pt>20 && daughter(1).pt()>10")#mass < 140
 
 
 # single lepton selectors

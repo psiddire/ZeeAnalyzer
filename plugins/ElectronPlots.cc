@@ -63,6 +63,7 @@ private:
   edm::EDGetTokenT<double> rhoToken_;
   edm::EDGetTokenT<reco::BeamSpot> beamSpotToken_;
   edm::EDGetTokenT<GenEventInfoProduct> genEventInfoProduct_;
+  //edm::EDGetTokenT<edm::View<reco::GsfElectron> > electronsToken_;  
   edm::EDGetToken electronsToken_;
   edm::EDGetTokenT<edm::View<reco::GenParticle> > genParticlesToken_;
   edm::EDGetTokenT<reco::VertexCollection> vtxToken_;
@@ -86,6 +87,10 @@ ElectronPlots::ElectronPlots(const edm::ParameterSet& iConfig) {
      ("beamSpot"));
   // reco::BeamSpot "offlineBeamSpot"
   
+  //electronsToken_ = mayConsume<edm::View<reco::GsfElectron> >
+  // (iConfig.getParameter<edm::InputTag>                                                                                               
+  // ("electrons"));        
+
   electronsToken_ = mayConsume<edm::View<pat::Electron> >                                           
     (iConfig.getParameter<edm::InputTag>                                                                
      ("electrons"));
@@ -127,6 +132,7 @@ void ElectronPlots::analyze(const edm::Event& iEvent, const edm::EventSetup& iSe
   // Get electrons
   edm::Handle<edm::View<pat::Electron> > electrons;
   iEvent.getByToken(electronsToken_, electrons);
+  //edm::Handle<edm::View<reco::GsfElectron> > electrons;                                                                             //iEvent.getByToken(electronsToken_, electrons);
 
   double rho=0;
   edm::Handle< double > rhoH;
@@ -134,7 +140,7 @@ void ElectronPlots::analyze(const edm::Event& iEvent, const edm::EventSetup& iSe
   rho = *rhoH;
   
   //nEvents+=1;
-  std::cout << iEvent.id().event() << " " << rho << " " << *(rhoH.product()) <<std::endl;
+  std::cout << iEvent.id().event() << " " << rho << " " << *(rhoH.product()) <<  std::endl;
   
   if (isMC==true){
   // Get MC Collection
@@ -154,10 +160,10 @@ void ElectronPlots::analyze(const edm::Event& iEvent, const edm::EventSetup& iSe
 	TLorentzVector pfz;
 	pfz.SetPxPyPzE(el1->px()+el2->px(),el1->py()+el2->py(),el1->pz()+el2->pz(),el1->energy()+el2->energy());
         
-	if( pfz.M() < 40 or pfz.M() > 140 ) continue;
+	if( pfz.M() < 40 or pfz.M() > 140) continue;
 	if ( el1->pt() < 20 or el2->pt() < 10 ) continue;
 	
-	if ( matchToTruth( el1, genParticles)!=1 or matchToTruth( el2, genParticles)!=1) continue;
+        //if ( matchToTruth( el1, genParticles)!=1 or matchToTruth( el2, genParticles)!=1) continue;
         // Fill if above cuts are met
 	h_mass -> Fill(pfz.M());
 	h_eta1 -> Fill(el1->eta());
@@ -188,7 +194,7 @@ void ElectronPlots::analyze(const edm::Event& iEvent, const edm::EventSetup& iSe
     TLorentzVector pfz;
     pfz.SetPxPyPzE(el1->px()+el2->px(),el1->py()+el2->py(),el1->pz()+el2->pz(),el1->energy()+el2->energy());
 
-    if (fabs(el1->eta()) < 2.5 and fabs(el2->eta()) < 2.5 and pfz.M() > 70 and pfz.M() < 110 and el1->pt() > 20 and el2->pt() > 10){
+    if (fabs(el1->eta()) < 2.5 and fabs(el2->eta()) < 2.5 and pfz.M() > 70 and pfz.M() < 110 and el1->pt() > 20 and el2->pt() > 10){//pfz.M() < 110
       // Fill if above cuts are met                                                                                            
       h_mass -> Fill(pfz.M());
       h_eta1 -> Fill(el1->eta());
